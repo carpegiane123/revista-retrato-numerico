@@ -4,23 +4,23 @@
    ========================================================================== */
 :root {
   /* cores do papel e da tinta */
-  --papel: #f7f8f5;
-  --papel-2: #edf0ea;
-  --papel-3: #dfe5dc;
+  --papel: #f7f7f3;
+  --papel-2: #eeeee7;
+  --papel-3: #e0e1d8;
   --cartao: #ffffff;
-  --tinta: #18201b;
-  --tinta-suave: #435048;
-  --tinta-fraca: #5e6d63;
-  --linha: #d2dad3;
-  --linha-forte: #aebbb0;
+  --tinta: #1c1f1d;
+  --tinta-suave: #464d48;
+  --tinta-fraca: #626b64;
+  --linha: #d5d8cf;
+  --linha-forte: #b2b8ac;
 
-  /* cores de destaque (Brasil · Geografia · IFRN) */
+  /* cores da revista (Verde IFRN + Ardósia sóbria) */
   --destaque: #196b3b;          /* verde-floresta: cor principal da revista */
   --destaque-escuro: #114d2a;
-  --tinta-destaque: #ffffff;    /* texto sobre fundos de destaque/azul */
-  --azul: #1f4e8c;              /* azul-cobalto: segunda cor */
-  --azul-claro: #e4ecf7;
-  --mostarda: #9a6507;          /* ocre: caixas de curiosidade */
+  --tinta-destaque: #ffffff;    /* texto sobre fundos de destaque/ardósia */
+  --azul: #2d4259;              /* ardósia/marinho fechado: segunda cor editorial */
+  --azul-claro: #e7ecf2;
+  --mostarda: #9e6508;          /* ocre: caixas de curiosidade */
   --mostarda-claro: #f6ecd3;
   --verde: #266b4c;
   --verde-claro: #e1efe7;
@@ -28,11 +28,11 @@
   --vermelho-claro: #f7dddd;
   --marca-texto: #fff0a6;       /* para os campos [PREENCHER] */
 
-  /* cores dos gráficos */
-  --cor-homem: var(--azul);
-  --cor-mulher: var(--destaque);
-  --cor-barra: var(--azul);
-  --cor-barra-2: var(--destaque);
+  /* cores características só para os gráficos */
+  --cor-homem: #2b5c8f;         /* azul-aço demográfico */
+  --cor-mulher: #9e2a4b;        /* vinho/bordô editorial */
+  --cor-barra: #2b5c8f;         /* barra base */
+  --cor-barra-2: #c4740e;       /* âmbar: convidado rico / barra de contraste */
 
   /* fontes (com reservas caso a internet falhe) */
   --fonte-titulo: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
@@ -53,20 +53,20 @@
 
 /* Tema escuro escolhido pelo leitor (botão "Tema") */
 :root[data-tema="escuro"] {
-  --papel: #121714;
-  --papel-2: #19201c;
-  --papel-3: #232c27;
-  --cartao: #181f1b;
-  --tinta: #ecf1ed;
-  --tinta-suave: #c4d0c7;
-  --tinta-fraca: #95a59a;
-  --linha: #2d3831;
-  --linha-forte: #45544a;
+  --papel: #141715;
+  --papel-2: #1c201d;
+  --papel-3: #252b27;
+  --cartao: #1b1f1c;
+  --tinta: #ecefed;
+  --tinta-suave: #c4ccc7;
+  --tinta-fraca: #95a099;
+  --linha: #2f3631;
+  --linha-forte: #48524b;
   --destaque: #64d28b;
   --destaque-escuro: #8ee0ae;
-  --tinta-destaque: #121714;
-  --azul: #78a9f5;
-  --azul-claro: #1a293d;
+  --tinta-destaque: #141715;
+  --azul: #8fa9c4;
+  --azul-claro: #1e2833;
   --mostarda: #e5b755;
   --mostarda-claro: #332a14;
   --verde: #7cd69f;
@@ -74,26 +74,31 @@
   --vermelho: #f28d8d;
   --vermelho-claro: #3b1e1e;
   --marca-texto: #4a4010;
+
+  --cor-homem: #6da4df;
+  --cor-mulher: #e47996;
+  --cor-barra: #6da4df;
+  --cor-barra-2: #ebb04b;
   color-scheme: dark;
 }
 
 /* Se o leitor não escolheu nada e o sistema dele está no escuro */
 @media (prefers-color-scheme: dark) {
   :root:not([data-tema="claro"]) {
-    --papel: #121714;
-    --papel-2: #19201c;
-    --papel-3: #232c27;
-    --cartao: #181f1b;
-    --tinta: #ecf1ed;
-    --tinta-suave: #c4d0c7;
-    --tinta-fraca: #95a59a;
-    --linha: #2d3831;
-    --linha-forte: #45544a;
+    --papel: #141715;
+    --papel-2: #1c201d;
+    --papel-3: #252b27;
+    --cartao: #1b1f1c;
+    --tinta: #ecefed;
+    --tinta-suave: #c4ccc7;
+    --tinta-fraca: #95a099;
+    --linha: #2f3631;
+    --linha-forte: #48524b;
     --destaque: #64d28b;
     --destaque-escuro: #8ee0ae;
-    --tinta-destaque: #121714;
-    --azul: #78a9f5;
-    --azul-claro: #1a293d;
+    --tinta-destaque: #141715;
+    --azul: #8fa9c4;
+    --azul-claro: #1e2833;
     --mostarda: #e5b755;
     --mostarda-claro: #332a14;
     --verde: #7cd69f;
@@ -101,6 +106,11 @@
     --vermelho: #f28d8d;
     --vermelho-claro: #3b1e1e;
     --marca-texto: #4a4010;
+
+    --cor-homem: #6da4df;
+    --cor-mulher: #e47996;
+    --cor-barra: #6da4df;
+    --cor-barra-2: #ebb04b;
     color-scheme: dark;
   }
 }
@@ -527,8 +537,8 @@ code, kbd {
   line-height: 1.45;
   color: var(--tinta-fraca);
 }
-.arte-piramide { color: var(--azul); }
-.arte-barril { color: var(--destaque); }
+.arte-piramide { color: var(--cor-homem); }
+.arte-barril { color: var(--cor-mulher); }
 .arte-rotulo {
   font-family: var(--fonte-ui);
   font-size: 12px;
@@ -1404,7 +1414,7 @@ input[type="range"]:focus-visible { outline-offset: 6px; }
 .bolo__fatia {
   height: calc(var(--h, 0) * 1%);
   min-height: 2px;
-  background: var(--destaque);
+  background: var(--cor-barra-2);
   border: 1.5px solid var(--tinta);
   border-radius: 0.15rem 0.15rem 0 0;
   transition: height 0.45s ease;
