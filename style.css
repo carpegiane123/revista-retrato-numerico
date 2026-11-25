@@ -1,32 +1,31 @@
-
 /* ==========================================================================
    0. VARIÁVEIS
    Tema claro = "papel de revista". Tema escuro = "leitura noturna".
    ========================================================================== */
 :root {
   /* cores do papel e da tinta */
-  --papel: #f6f0e4;
-  --papel-2: #efe6d3;
-  --papel-3: #e6dac1;
-  --cartao: #fbf6eb;
-  --tinta: #241d15;
-  --tinta-suave: #564a3a;
-  --tinta-fraca: #6a5b46;
-  --linha: #d8cab0;
-  --linha-forte: #b5a485;
+  --papel: #f7f8f5;
+  --papel-2: #edf0ea;
+  --papel-3: #dfe5dc;
+  --cartao: #ffffff;
+  --tinta: #18201b;
+  --tinta-suave: #435048;
+  --tinta-fraca: #5e6d63;
+  --linha: #d2dad3;
+  --linha-forte: #aebbb0;
 
-  /* cores de destaque */
-  --destaque: #a8452b;          /* terracota: cor principal da revista */
-  --destaque-escuro: #7e3320;
+  /* cores de destaque (Brasil · Geografia · IFRN) */
+  --destaque: #196b3b;          /* verde-floresta: cor principal da revista */
+  --destaque-escuro: #114d2a;
   --tinta-destaque: #ffffff;    /* texto sobre fundos de destaque/azul */
-  --azul: #1f5c5a;              /* verde-petróleo: segunda cor */
-  --azul-claro: #e0ece8;
-  --mostarda: #a36b0a;
-  --mostarda-claro: #f5e6c0;
-  --verde: #3d6b34;
-  --verde-claro: #e3edd7;
-  --vermelho: #a02b2b;
-  --vermelho-claro: #f6dcd6;
+  --azul: #1f4e8c;              /* azul-cobalto: segunda cor */
+  --azul-claro: #e4ecf7;
+  --mostarda: #9a6507;          /* ocre: caixas de curiosidade */
+  --mostarda-claro: #f6ecd3;
+  --verde: #266b4c;
+  --verde-claro: #e1efe7;
+  --vermelho: #b02a2a;
+  --vermelho-claro: #f7dddd;
   --marca-texto: #fff0a6;       /* para os campos [PREENCHER] */
 
   /* cores dos gráficos */
@@ -54,26 +53,26 @@
 
 /* Tema escuro escolhido pelo leitor (botão "Tema") */
 :root[data-tema="escuro"] {
-  --papel: #1b1916;
-  --papel-2: #23201c;
-  --papel-3: #2d2923;
-  --cartao: #221f1b;
-  --tinta: #efe7d6;
-  --tinta-suave: #d2c7b0;
-  --tinta-fraca: #a99c85;
-  --linha: #3b362e;
-  --linha-forte: #5a5245;
-  --destaque: #e58a6c;
-  --destaque-escuro: #f2ab92;
-  --tinta-destaque: #1b1916;
-  --azul: #7fc4bc;
-  --azul-claro: #1f3835;
-  --mostarda: #e2b04c;
-  --mostarda-claro: #3a2f15;
-  --verde: #9bd48f;
-  --verde-claro: #22301f;
-  --vermelho: #f29a9a;
-  --vermelho-claro: #3d2121;
+  --papel: #121714;
+  --papel-2: #19201c;
+  --papel-3: #232c27;
+  --cartao: #181f1b;
+  --tinta: #ecf1ed;
+  --tinta-suave: #c4d0c7;
+  --tinta-fraca: #95a59a;
+  --linha: #2d3831;
+  --linha-forte: #45544a;
+  --destaque: #64d28b;
+  --destaque-escuro: #8ee0ae;
+  --tinta-destaque: #121714;
+  --azul: #78a9f5;
+  --azul-claro: #1a293d;
+  --mostarda: #e5b755;
+  --mostarda-claro: #332a14;
+  --verde: #7cd69f;
+  --verde-claro: #193022;
+  --vermelho: #f28d8d;
+  --vermelho-claro: #3b1e1e;
   --marca-texto: #4a4010;
   color-scheme: dark;
 }
@@ -81,31 +80,30 @@
 /* Se o leitor não escolheu nada e o sistema dele está no escuro */
 @media (prefers-color-scheme: dark) {
   :root:not([data-tema="claro"]) {
-    --papel: #1b1916;
-    --papel-2: #23201c;
-    --papel-3: #2d2923;
-    --cartao: #221f1b;
-    --tinta: #efe7d6;
-    --tinta-suave: #d2c7b0;
-    --tinta-fraca: #a99c85;
-    --linha: #3b362e;
-    --linha-forte: #5a5245;
-    --destaque: #e58a6c;
-    --destaque-escuro: #f2ab92;
-    --tinta-destaque: #1b1916;
-    --azul: #7fc4bc;
-    --azul-claro: #1f3835;
-    --mostarda: #e2b04c;
-    --mostarda-claro: #3a2f15;
-    --verde: #9bd48f;
-    --verde-claro: #22301f;
-    --vermelho: #f29a9a;
-    --vermelho-claro: #3d2121;
+    --papel: #121714;
+    --papel-2: #19201c;
+    --papel-3: #232c27;
+    --cartao: #181f1b;
+    --tinta: #ecf1ed;
+    --tinta-suave: #c4d0c7;
+    --tinta-fraca: #95a59a;
+    --linha: #2d3831;
+    --linha-forte: #45544a;
+    --destaque: #64d28b;
+    --destaque-escuro: #8ee0ae;
+    --tinta-destaque: #121714;
+    --azul: #78a9f5;
+    --azul-claro: #1a293d;
+    --mostarda: #e5b755;
+    --mostarda-claro: #332a14;
+    --verde: #7cd69f;
+    --verde-claro: #193022;
+    --vermelho: #f28d8d;
+    --vermelho-claro: #3b1e1e;
     --marca-texto: #4a4010;
     color-scheme: dark;
   }
 }
-
 
 /* ==========================================================================
    1. RESET E BASE
