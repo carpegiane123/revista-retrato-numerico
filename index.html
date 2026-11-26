@@ -72,6 +72,7 @@
       <li><a href="#entrevista">Entrevista</a></li>
       <li><a href="#glossario">Glossário</a></li>
       <li><a href="#referencias">Referências</a></li>
+      <li><a href="#cartas">Sugestão/Opinião</a></li>
     </ul>
   </nav>
 
@@ -189,7 +190,7 @@
         <li><a href="#glossario"><span class="genero">Glossário</span> <span class="sumario__titulo">Termos técnicos traduzidos</span></a></li>
         <li><a href="#autores"><span class="genero">Expediente</span> <span class="sumario__titulo">Quem faz a revista</span></a></li>
         <li><a href="#referencias"><span class="genero">Referências</span> <span class="sumario__titulo">De onde vieram os dados (ABNT)</span></a></li>
-      </ol>
+<li><a href="#cartas"><span class="genero">Opinião do leitor</span> <span class="sumario__titulo">O que você achou desta edição?</span></a></li>      </ol>
 
       <aside class="box box--dica" aria-labelledby="como-ler-titulo">
         <h3 id="como-ler-titulo">Como ler esta edição</h3>
@@ -2061,9 +2062,63 @@
       </ul>
 
       <p class="box__nota">
-        Dica para os autores (remover antes da entrega): confiram cada link no navegador antes do envio final,
-        atualizem a data de “Acesso em” se necessário e verifiquem com o(a) docente a preferência quanto às URLs
-        completas nas notícias.
+       <strong> Dica para todos do grupo (remover antes da entrega): confiram cada link no navegador antes do envio final,
+        me lembrem de atualizar a data de “Acesso em” se necessário e verificar com o professor a preferência quanto às URLs
+        completas nas notícias.</strong>
+      </p>
+    </section>
+
+<!-- =====================================================================
+         BLOCO 12B — CARTAS À REDAÇÃO (AVALIAÇÃO E SUGESTÕES)
+         ===================================================================== -->
+    <section class="cartas sem-impressao" id="cartas" aria-labelledby="cartas-titulo">
+      <p class="genero-etiqueta">Cartas à redação</p>
+      <h2 id="cartas-titulo">Avalie esta edição</h2>
+      <p class="linha-fina">
+        O que achou das reportagens e dos simuladores? Dê uma nota de 1 a 5 estrelas e, se quiser, deixe uma sugestão
+        de tema para a próxima edição.
+      </p>
+
+      <form id="form-cartas" class="cartas__form" novalidate>
+        <div class="cartas__nota-bloco">
+          <p id="cartas-rotulo-nota" class="cartas__label">Sua avaliação geral</p>
+          <div id="cartas-estrelas" class="estrelas" role="group" aria-labelledby="cartas-rotulo-nota">
+            <button type="button" class="estrela" data-nota="1" aria-pressed="false" aria-label="1 estrela">★</button>
+            <button type="button" class="estrela" data-nota="2" aria-pressed="false" aria-label="2 estrelas">★</button>
+            <button type="button" class="estrela" data-nota="3" aria-pressed="false" aria-label="3 estrelas">★</button>
+            <button type="button" class="estrela" data-nota="4" aria-pressed="false" aria-label="4 estrelas">★</button>
+            <button type="button" class="estrela" data-nota="5" aria-pressed="false" aria-label="5 estrelas">★</button>
+          </div>
+          <p id="cartas-nota-texto" class="cartas__nota-texto" aria-live="polite">Clique em uma estrela para dar sua nota.</p>
+        </div>
+
+        <div class="cartas__campo">
+          <label for="cartas-nome">Seu nome (opcional)</label>
+          <input type="text" id="cartas-nome" maxlength="60" placeholder="Ex.: Maria Silva">
+        </div>
+
+        <div class="cartas__campo">
+          <label for="cartas-texto">Sugestão ou comentário (opcional)</label>
+          <textarea id="cartas-texto" rows="4" maxlength="500"
+                    placeholder="Escreva o que mais gostou, o que pode melhorar ou um assunto para a edição nº 2..."></textarea>
+        </div>
+
+        <div class="cartas__acoes">
+          <button type="submit" id="cartas-enviar">Enviar avaliação</button>
+        </div>
+        <p id="cartas-aviso" class="cartas__aviso" aria-live="polite"></p>
+      </form>
+
+      <div id="cartas-mural" class="cartas__mural" hidden>
+        <div class="cartas__mural-topo">
+          <h3>Registros desta leitura</h3>
+          <button type="button" id="cartas-limpar" class="cartas__limpar">Limpar</button>
+        </div>
+        <ul id="cartas-lista" class="cartas__lista"></ul>
+      </div>
+
+<p class="box__nota">
+        Sua avaliação e sugestão são enviadas diretamente para a equipe editorial e ficam registradas neste navegador apenas para sua conferência.
       </p>
     </section>
 
