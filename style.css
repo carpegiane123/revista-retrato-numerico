@@ -14,25 +14,32 @@
   --linha: #d5d8cf;
   --linha-forte: #b2b8ac;
 
-  /* cores da revista (Verde IFRN + Ardósia sóbria) */
-  --destaque: #196b3b;          /* verde-floresta: cor principal da revista */
+  /* cores principais da revista (Verde IFRN + Azul) */
+  --destaque: #196b3b;          /* verde-floresta */
   --destaque-escuro: #114d2a;
-  --tinta-destaque: #ffffff;    /* texto sobre fundos de destaque/ardósia */
-  --azul: #2d4259;              /* ardósia/marinho fechado: segunda cor editorial */
-  --azul-claro: #e7ecf2;
-  --mostarda: #9e6508;          /* ocre: caixas de curiosidade */
+  --tinta-destaque: #ffffff;
+  --azul: #1f4e8c;              /* azul-cobalto */
+  --azul-claro: #e4ecf7;
+  --mostarda: #9e6508;
   --mostarda-claro: #f6ecd3;
   --verde: #266b4c;
   --verde-claro: #e1efe7;
   --vermelho: #b02a2a;
   --vermelho-claro: #f7dddd;
-  --marca-texto: #fff0a6;       /* para os campos [PREENCHER] */
+  --marca-texto: #fff0a6;
 
-  /* cores características só para os gráficos */
-  --cor-homem: #2b5c8f;         /* azul-aço demográfico */
-  --cor-mulher: #9e2a4b;        /* vinho/bordô editorial */
-  --cor-barra: #2b5c8f;         /* barra base */
-  --cor-barra-2: #c4740e;       /* âmbar: convidado rico / barra de contraste */
+  /* cores extras para variar títulos, descrições e gráficos */
+  --cor-roxo: #5e3a8c;
+  --cor-vinho: #962646;
+  --cor-ambar: #a85d06;
+  --cor-petroleo: #15525e;
+  --cor-coral: #b53838;
+
+  /* cores base dos gráficos */
+  --cor-homem: var(--azul);
+  --cor-mulher: var(--cor-vinho);
+  --cor-barra: var(--azul);
+  --cor-barra-2: var(--cor-ambar);
 
   /* fontes (com reservas caso a internet falhe) */
   --fonte-titulo: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, "Times New Roman", serif;
@@ -40,9 +47,9 @@
   --fonte-ui: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   /* medidas */
-  --medida: 46rem;              /* largura da coluna de leitura */
-  --largura-grande: 70rem;      /* largura de capa, sumário e rodapé */
-  --raio: 0.25rem;              /* cantos discretos, de impresso */
+  --medida: 46rem;
+  --largura-grande: 70rem;
+  --raio: 0.25rem;
 
   /* controlados pelo JavaScript */
   --escala-fonte: 1;
@@ -65,8 +72,8 @@
   --destaque: #64d28b;
   --destaque-escuro: #8ee0ae;
   --tinta-destaque: #141715;
-  --azul: #8fa9c4;
-  --azul-claro: #1e2833;
+  --azul: #78a9f5;
+  --azul-claro: #1a293d;
   --mostarda: #e5b755;
   --mostarda-claro: #332a14;
   --verde: #7cd69f;
@@ -75,10 +82,16 @@
   --vermelho-claro: #3b1e1e;
   --marca-texto: #4a4010;
 
-  --cor-homem: #6da4df;
-  --cor-mulher: #e47996;
-  --cor-barra: #6da4df;
-  --cor-barra-2: #ebb04b;
+  --cor-roxo: #b993f2;
+  --cor-vinho: #eb7e9c;
+  --cor-ambar: #ebb04b;
+  --cor-petroleo: #95d1dc;
+  --cor-coral: #f08080;
+
+  --cor-homem: var(--azul);
+  --cor-mulher: var(--cor-vinho);
+  --cor-barra: var(--azul);
+  --cor-barra-2: var(--cor-ambar);
   color-scheme: dark;
 }
 
@@ -97,8 +110,8 @@
     --destaque: #64d28b;
     --destaque-escuro: #8ee0ae;
     --tinta-destaque: #141715;
-    --azul: #8fa9c4;
-    --azul-claro: #1e2833;
+    --azul: #78a9f5;
+    --azul-claro: #1a293d;
     --mostarda: #e5b755;
     --mostarda-claro: #332a14;
     --verde: #7cd69f;
@@ -107,10 +120,16 @@
     --vermelho-claro: #3b1e1e;
     --marca-texto: #4a4010;
 
-    --cor-homem: #6da4df;
-    --cor-mulher: #e47996;
-    --cor-barra: #6da4df;
-    --cor-barra-2: #ebb04b;
+    --cor-roxo: #b993f2;
+    --cor-vinho: #eb7e9c;
+    --cor-ambar: #ebb04b;
+    --cor-petroleo: #95d1dc;
+    --cor-coral: #f08080;
+
+    --cor-homem: var(--azul);
+    --cor-mulher: var(--cor-vinho);
+    --cor-barra: var(--azul);
+    --cor-barra-2: var(--cor-ambar);
     color-scheme: dark;
   }
 }
@@ -2092,4 +2111,155 @@ progress::-moz-progress-bar { background: var(--azul); }
   .rodape a { color: #111; }
 
   .preencher { box-shadow: none; }
+}
+
+/* ==========================================================================
+   CARTAS À REDAÇÃO (avaliação com estrelas e sugestões)
+   ========================================================================== */
+.cartas {
+  max-width: var(--medida);
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem 2.5rem;
+  border-top: 3px double var(--tinta);
+}
+.cartas__form {
+  margin: 1.5rem 0 1rem;
+  padding: 1.35rem 1.3rem 1.45rem;
+  background: var(--cartao);
+  border: 1px solid var(--linha-forte);
+  border-top: 3px solid var(--destaque);
+  border-radius: var(--raio);
+}
+.cartas__nota-bloco { margin-bottom: 1.15rem; }
+.cartas__label,
+.cartas__campo label {
+  display: block;
+  margin: 0 0 0.35rem;
+  font-family: var(--fonte-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--tinta);
+}
+.estrelas {
+  display: inline-flex;
+  gap: 0.2rem;
+}
+.estrela {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 0.15rem 0.25rem;
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--linha-forte);
+  cursor: pointer;
+  transition: color 0.12s ease, transform 0.12s ease;
+}
+.estrela.preview,
+.estrela.ativa {
+  color: var(--mostarda);
+  transform: scale(1.08);
+}
+.cartas__nota-texto {
+  margin: 0.35rem 0 0;
+  font-family: var(--fonte-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--tinta-suave);
+}
+.cartas__campo { margin-bottom: 1rem; }
+.cartas__campo input,
+.cartas__campo textarea {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--linha-forte);
+  border-radius: var(--raio);
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--fonte-texto);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+.cartas__campo input:focus,
+.cartas__campo textarea:focus {
+  outline: 2px solid var(--azul);
+  outline-offset: 1px;
+}
+.cartas__acoes button,
+.cartas__limpar {
+  appearance: none;
+  cursor: pointer;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--tinta);
+  border-radius: var(--raio);
+  background: var(--cartao);
+  color: var(--tinta);
+  font-family: var(--fonte-ui);
+  font-size: 0.86rem;
+  font-weight: 600;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.cartas__acoes button:hover,
+.cartas__limpar:hover {
+  background: var(--destaque);
+  border-color: var(--destaque);
+  color: var(--tinta-destaque);
+}
+.cartas__limpar {
+  padding: 0.3rem 0.65rem;
+  font-size: 0.76rem;
+  border-color: var(--linha-forte);
+}
+.cartas__aviso {
+  margin: 0.75rem 0 0;
+  font-family: var(--fonte-ui);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--destaque);
+}
+.cartas__mural { margin: 1.6rem 0 1rem; }
+.cartas__mural-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.75rem;
+}
+.cartas__mural-topo h3 { margin: 0; font-size: 1.15rem; }
+.cartas__mural-topo h3::after { display: none; }
+.cartas__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+.carta {
+  padding: 0.9rem 1rem;
+  background: var(--papel-2);
+  border: 1px solid var(--linha);
+  border-left: 4px solid var(--destaque);
+  border-radius: 0 var(--raio) var(--raio) 0;
+}
+.carta:nth-child(even) { border-left-color: var(--azul); }
+.carta__topo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.4rem 0.8rem;
+  margin-bottom: 0.3rem;
+  font-family: var(--fonte-ui);
+  font-size: 0.82rem;
+}
+.carta__estrelas {
+  color: var(--mostarda);
+  letter-spacing: 0.08em;
+  font-size: 0.95rem;
+}
+.carta__meta { color: var(--tinta-fraca); }
+.carta__texto {
+  margin: 0.35rem 0 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
 }
