@@ -1030,6 +1030,196 @@
     form.addEventListener("submit", (e) => { e.preventDefault(); corrigir(); });
   }
 
+/* ======================================================================
+     EXTRA — CARTAS À REDAÇÃO (ENVIA PARA O E-MAIL VIA WEB3FORMS)
+     ====================================================================== */
+  function iniciarCartas() {
+    const form = $("form-cartas");
+    const grupo = $("cartas-estrelas");
+    if (!form || !grupo) return;
+
+    const WEB3FORMS_CHAVE = "6c94aa68-180a-4853-9063-f5aa2adab3b3";
+    const CHAVE_LOCAL = "conta-de-gente-cartas-v1";
+
+    const estrelas = $$(".estrela", grupo);
+    const notaTexto = $("cartas-nota-texto");
+    const campoNome = $("cartas-nome");
+    const campoTexto = $("cartas-texto");
+    const btnEnviar = $("cartas-enviar");
+    const aviso = $("cartas-aviso");
+    const mural = $("cartas-mural");
+    const listaEl = $("cartas-lista");
+    const btnLimpar = $("cartas-limpar");
+
+    const LEGENDA = {
+      1: "1 de 5 estrelas — Precisa melhorar",
+      2: "2 de 5 estrelas — Regular",
+      3: "3 de 5 estrelas — Boa edição",
+      4: "4 de 5 estrelas — Muito boa",
+      5: "5 de 5 estrelas — Excelente!",
+    };
+
+    let notaAtual = 0;
+
+    function lerSalvas() {
+      try {
+        const bruto = localStorage.getItem(CHAVE_LOCAL);
+        const dados = bruto ? JSON.parse(bruto) : [];
+        return Array.isArray(dados) ? dados : [];
+      } catch (e) {
+        return [];
+      }
+    }
+
+    function salvar(lista) {
+      try { localStorage.setItem(CHAVE_LOCAL, JSON.stringify(lista)); } catch (e) {}
+    }
+
+    let cartas = lerSalvas();
+
+    function pintar(qtd, classe) {
+      estrelas.forEach((btn, i) => {
+        const ligar = i < qtd;
+        if (classe === "preview") {
+          btn.classList.toggle("preview", ligar);
+        } else {
+          btn.classList.remove("preview");
+          btn.classList.toggle("ativa", ligar);
+          btn.setAttribute("aria-pressed", i + 1 === qtd ? "true" : "false");
+        }
+      });
+    }
+
+    estrelas.forEach((btn) => {
+      const valor = Number(btn.getAttribute("data-nota"));
+      btn.addEventListener("mouseenter", () => pintar(valor, "preview"));
+      btn.addEventListener("click", () => {
+        notaAtual = valor;
+        pintar(notaAtual, "ativa");
+        if (notaTexto) notaTexto.textContent = LEGENDA[notaAtual] || "";
+        if (aviso) aviso.textContent = "";
+      });
+    });
+
+    grupo.addEventListener("mouseleave", () => {
+      estrelas.forEach((b) => b.classList.remove("preview"));
+    });
+
+    function renderizar() {
+      if (!mural || !listaEl) return;
+      listaEl.textContent = "";
+      if (cartas.length === 0) {
+        mural.hidden = true;
+        return;
+      }
+      mural.hidden = false;
+      cartas.forEach((item) => {
+        const li = document.createElement("li");
+        li.className = "carta";
+
+        const topo = document.createElement("div");
+        topo.className = "carta__topo";
+
+        const meta = document.createElement("span");
+        meta.className = "carta__meta";
+        const strong = document.createElement("strong");
+        strong.textContent = item.nome;
+        meta.appendChild(strong);
+        meta.appendChild(document.createTextNode(" · " + item.data));
+
+        const est = document.createElement("span");
+        est.className = "carta__estrelas";
+        est.setAttribute("aria-label", item.nota + " de 5 estrelas");
+        est.textContent = "★".repeat(item.nota) + "☆".repeat(5 - item.nota);
+
+        topo.appendChild(meta);
+        topo.appendChild(est);
+        li.appendChild(topo);
+
+        if (item.texto) {
+          const p = document.createElement("p");
+          p.className = "carta__texto";
+          p.textContent = item.texto;
+          li.appendChild(p);
+        }
+        listaEl.appendChild(li);
+      });
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!notaAtual) {
+        if (aviso) aviso.textContent = "Selecione de 1 a 5 estrelas antes de enviar.";
+        return;
+      }
+
+      const nome = (campoNome && campoNome.value.trim().slice(0, 60)) || "Leitor(a) anônimo(a)";
+      const texto = campoTexto ? campoTexto.value.trim().slice(0, 500) : "";
+
+      if (btnEnviar) {
+        btnEnviar.disabled = true;
+        btnEnviar.textContent = "Enviando...";
+      }
+      if (aviso) aviso.textContent = "Enviando sua avaliação para a redação...";
+
+      try {
+        const resposta = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+          },
+          body: JSON.stringify({
+            access_key: WEB3FORMS_CHAVE,
+            subject: "Nova avaliação na revista Conta de Gente (" + notaAtual + "/5)",
+            from_name: "Revista Conta de Gente",
+            Nome: nome,
+            Nota: notaAtual + " de 5 estrelas",
+            Sugestao: texto || "(Sem comentário escrito)",
+          }),
+        });
+
+        const dados = await resposta.json();
+        if (!resposta.ok || !dados.success) {
+          throw new Error(dados.message || "Falha no envio");
+        }
+
+        cartas.unshift({
+          nota: notaAtual,
+          nome: nome,
+          texto: texto,
+          data: new Date().toLocaleDateString("pt-BR"),
+        });
+        salvar(cartas);
+        renderizar();
+
+        notaAtual = 0;
+        pintar(0, "ativa");
+        if (notaTexto) notaTexto.textContent = "Clique em uma estrela para dar sua nota.";
+        if (campoNome) campoNome.value = "";
+        if (campoTexto) campoTexto.value = "";
+        if (aviso) aviso.textContent = "Obrigado! Sua avaliação foi enviada para a redação.";
+      } catch (erro) {
+        if (aviso) aviso.textContent = "Não foi possível enviar agora. Verifique sua conexão e tente novamente.";
+      } finally {
+        if (btnEnviar) {
+          btnEnviar.disabled = false;
+          btnEnviar.textContent = "Enviar avaliação";
+        }
+      }
+    });
+
+    if (btnLimpar) {
+      btnLimpar.addEventListener("click", () => {
+        cartas = [];
+        try { localStorage.removeItem(CHAVE_LOCAL); } catch (e) {}
+        renderizar();
+        if (aviso) aviso.textContent = "Registros deste navegador removidos.";
+      });
+    }
+
+    renderizar();
+  }
 
   /* ======================================================================
      10. PARTIDA
@@ -1040,7 +1230,7 @@
       iniciarTema, iniciarFonte, iniciarImpressao, iniciarTopo,
       iniciarProgresso, iniciarMenu,
       iniciarPiramide, iniciarPosicao, iniciarSala, iniciarBolo, iniciarIdh, iniciarEixo, iniciarDesenhos,
-      iniciarChecklist, iniciarQuiz,
+      iniciarChecklist, iniciarQuiz, iniciarCartas,
     ].forEach((funcao) => {
       try { funcao(); } catch (erro) {
         if (window.console) console.error("[Conta de Gente] Erro em " + funcao.name + ":", erro);
