@@ -4,16 +4,16 @@
   <!-- ===================== CABEÇALHO TÉCNICO (<head>) ===================== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Conta de Gente · O Brasil em Pirâmides — revista digital de divulgação científica</title>
+  <title>Conta de Gente · O Brasil em Pirâmides: revista digital de divulgação científica</title>
   <meta name="description" content="Revista digital de divulgação científica sobre demografia, Censo do IBGE, média e mediana, Índice de Gini, IDH e leitura crítica de gráficos. Textos explicados desde a base e ferramentas interativas.">
-  <meta name="author" content="Miguel, Juan e Livia">
+  <meta name="author" content="Miguel Carpegiane, Juan Pablo e Lívia Érica">
   <meta name="theme-color" content="#f6f0e4">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Conta de Gente · O Brasil em Pirâmides">
   <meta property="og:description" content="Revista digital de divulgação científica: Censo, pirâmide etária, média e mediana, Índice de Gini, IDH e leitura crítica de gráficos.">
   <meta property="og:locale" content="pt_BR">
 
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f6f0e4'/%3E%3Crect x='26' y='10' width='12' height='12' rx='2' fill='%23a8452b'/%3E%3Crect x='18' y='26' width='28' height='12' rx='2' fill='%23a8452b'/%3E%3Crect x='10' y='42' width='44' height='12' rx='2' fill='%23a8452b'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23f6f0e4'/%3E%3Crect x='26' y='10' width='12' height='12' rx='2' fill='%23196b3b'/%3E%3Crect x='18' y='26' width='28' height='12' rx='2' fill='%23196b3b'/%3E%3Crect x='10' y='42' width='44' height='12' rx='2' fill='%23196b3b'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,8 +32,8 @@
 
   <noscript>
     <p class="aviso-noscript">
-      Esta edição inclui ferramentas interativas que dependem de JavaScript. Todas as reportagens e os dados
-      permanecem disponíveis, mas, para operar os simuladores da seção “Mão na massa”, ative o JavaScript no navegador.
+      Esta edição tem simuladores interativos que dependem de JavaScript. As matérias e os números continuam
+      disponíveis normalmente, mas para mexer nos controles da seção “Mão na massa”, ative o JavaScript no navegador.
     </p>
   </noscript>
 
@@ -44,7 +44,7 @@
     <div class="masthead__topo">
       <p class="masthead__edicao">Edição nº 1 · Novembro de 2026 · Revista digital de divulgação científica</p>
 
-        <div class="ferramentas-leitura sem-impressao" role="group" aria-label="Ferramentas de leitura">
+      <div class="ferramentas-leitura sem-impressao" role="group" aria-label="Ferramentas de leitura">
         <button type="button" id="btn-fonte-menos" aria-label="Diminuir o tamanho da letra">A−</button>
         <button type="button" id="btn-fonte-valor" aria-live="polite" aria-label="Tamanho da letra: 100% (normal)" title="Tamanho normal (100%)" disabled>100%</button>
         <button type="button" id="btn-fonte-mais" aria-label="Aumentar o tamanho da letra">A+</button>
@@ -54,7 +54,7 @@
     </div>
 
     <h1 class="masthead__titulo">Conta de Gente</h1>
-    <p class="masthead__lema">Números, pessoas e o Brasil — explicados com clareza desde a base</p>
+    <p class="masthead__lema">Números, pessoas e o Brasil, explicados com clareza desde a base</p>
   </header>
 
   <!-- Menu fora do header para que position: sticky acompanhe toda a leitura -->
@@ -72,7 +72,7 @@
       <li><a href="#entrevista">Entrevista</a></li>
       <li><a href="#glossario">Glossário</a></li>
       <li><a href="#referencias">Referências</a></li>
-      <li><a href="#cartas">Sugestão/Opinião</a></li>
+      <li><a href="#cartas">Opinião</a></li>
     </ul>
   </nav>
 
@@ -85,8 +85,8 @@
       <p class="capa__chapeu">Matemática · Geografia · História</p>
       <h2 id="capa-titulo" class="capa__titulo">O Brasil em Pirâmides</h2>
       <p class="capa__subtitulo">
-        Como o país recenseia a sua população, por que a “renda média” costuma ocultar desigualdades
-        e de que modo um gráfico induz ao erro apresentando apenas números verdadeiros.
+        Como o país conta sua população, por que a “renda média” costuma esconder desigualdades e de que jeito um
+        gráfico pode levar ao erro mostrando apenas números verdadeiros.
       </p>
 
       <figure class="capa__arte">
@@ -116,19 +116,18 @@
           <text x="130" y="220" text-anchor="middle" class="arte-rotulo">Brasil antigo: pirâmide</text>
           <text x="390" y="220" text-anchor="middle" class="arte-rotulo">Brasil atual: formato de barril</text>
         </svg>
-        <figcaption>Ilustração esquemática, sem escala. Cada barra representa um grupo etário: na base ficam os mais jovens; no topo, os mais velhos.</figcaption>
+        <figcaption>Ilustração esquemática, sem escala. Cada barra representa um grupo de idade: na base ficam os mais novos; no topo, os mais velhos.</figcaption>
       </figure>
 
       <ul class="capa__chamadas">
-        <li><a href="#reportagem-censo"><strong>Quem conta o Brasil?</strong> A trajetória do Censo desde 1872 e o que a transformação da pirâmide etária revela sobre o país.</a></li>
-        <li><a href="#reportagem-media"><strong>O bilionário que entrou na sala.</strong> Por que a expressão “em média” distorce a leitura de salários e rendimentos.</a></li>
+        <li><a href="#reportagem-censo"><strong>Quem conta o Brasil?</strong> A trajetória do Censo desde 1872 e o que a mudança da pirâmide etária mostra sobre o país.</a></li>
+        <li><a href="#reportagem-media"><strong>O bilionário que entrou na sala.</strong> Por que a expressão “em média” atrapalha a leitura de salários e rendimentos.</a></li>
         <li><a href="#reportagem-indicadores"><strong>Um bolo, três notas.</strong> Como funcionam o Índice de Gini e o IDH para medir desigualdade e desenvolvimento.</a></li>
-        <li><a href="#reportagem-graficos"><strong>Gráficos que mentem dizendo a verdade.</strong> O papel da escala, da área e do recorte temporal na distorção visual.</a></li>
+        <li><a href="#reportagem-graficos"><strong>Gráficos que mentem dizendo a verdade.</strong> O papel da escala, da área e do recorte de tempo na distorção visual.</a></li>
       </ul>
 
       <p class="capa__assinatura">
-        Pelos estudantes <span class="preencher">Miguel e Juan</span> (Licenciatura em Matemática)
-        e <span class="preencher">Livia</span> (Geografia)
+        Pelos estudantes Miguel e Juan (Licenciatura em Matemática) e Lívia (Geografia)
       </p>
     </section>
 
@@ -138,18 +137,18 @@
     <section class="numeros" id="brasil-em-numeros" aria-labelledby="numeros-titulo">
       <h2 id="numeros-titulo">O Brasil em cinco números</h2>
       <p class="numeros__intro">
-        Um panorama inicial antes da leitura das reportagens. Cada indicador vem acompanhado de seu ano de
-        referência e da instituição responsável — o primeiro cuidado indispensável para interpretar estatísticas públicas.
+        Um resumo rápido antes de começar as reportagens. Cada número vem com o ano e o órgão responsável. Esse é o
+        primeiro cuidado importante para não interpretar estatística pública solta.
       </p>
       <ul class="numeros__lista">
         <li>
           <span class="numero">203.080.756</span>
-          <span class="numero__rotulo">habitantes residiam no Brasil</span>
+          <span class="numero__rotulo">habitantes moravam no Brasil</span>
           <span class="numero__fonte">Censo Demográfico 2022 (IBGE), em 1º de agosto de 2022</span>
         </li>
         <li>
           <span class="numero">35 anos</span>
-          <span class="numero__rotulo">de idade mediana: metade da população brasileira é mais jovem que esse marco</span>
+          <span class="numero__rotulo">de idade mediana: metade da população é mais jovem que isso</span>
           <span class="numero__fonte">Censo Demográfico 2022 (IBGE); em 2010 era de 29 anos</span>
         </li>
         <li>
@@ -159,7 +158,7 @@
         </li>
         <li>
           <span class="numero">0,506</span>
-          <span class="numero__rotulo">Índice de Gini da renda (0 = igualdade plena; 1 = concentração máxima)</span>
+          <span class="numero__rotulo">Índice de Gini da renda (0 = igualdade total; 1 = concentração máxima)</span>
           <span class="numero__fonte">PNAD Contínua 2024 (IBGE), primeira divulgação</span>
         </li>
         <li>
@@ -190,24 +189,24 @@
         <li><a href="#glossario"><span class="genero">Glossário</span> <span class="sumario__titulo">Termos técnicos traduzidos</span></a></li>
         <li><a href="#autores"><span class="genero">Expediente</span> <span class="sumario__titulo">Quem faz a revista</span></a></li>
         <li><a href="#referencias"><span class="genero">Referências</span> <span class="sumario__titulo">De onde vieram os dados (ABNT)</span></a></li>
-<li><a href="#cartas"><span class="genero">Opinião do leitor</span> <span class="sumario__titulo">O que você achou desta edição?</span></a></li>      </ol>
+        <li><a href="#cartas"><span class="genero">Opinião do leitor</span> <span class="sumario__titulo">O que você achou desta edição?</span></a></li>
+      </ol>
 
       <aside class="box box--dica" aria-labelledby="como-ler-titulo">
         <h3 id="como-ler-titulo">Como ler esta edição</h3>
         <p>
-          As seções seguem uma sequência editorial contínua, mas cada reportagem é autônoma e pode ser lida na ordem
-          que despertar maior interesse.
+          As seções seguem uma sequência pensada para a leitura, mas cada reportagem funciona de forma independente e
+          pode ser lida na ordem que você achar mais interessante.
         </p>
         <p>
-          Ao longo dos textos surgem três tipos de quadro de apoio. Os blocos identificados como
-          <strong>“Curiosidade”</strong> e <strong>“Conta de cabeça”</strong> oferecem contexto histórico e
-          demonstrações passo a passo sem interromper o curso da matéria. Já os quadros <strong>“Mão na massa”</strong>
-          reúnem simuladores interativos: ao ajustar controles deslizantes e botões, o leitor observa de imediato o
-          efeito de cada variação sobre os resultados.
+          No meio dos textos aparecem três tipos de quadro de apoio. Os blocos de <strong>“Curiosidade”</strong> e
+          <strong>“Conta de cabeça”</strong> trazem fatos históricos e explicações passo a passo sem cortar o fio da
+          matéria. Já os quadros <strong>“Mão na massa”</strong> reúnem simuladores interativos: mexendo nos controles e
+          botões, dá para ver na hora o efeito de cada mudança nos resultados.
         </p>
         <p>
-          Caso precise arquivar uma cópia, utilize o botão <strong>“Salvar em PDF”</strong> no cabeçalho: a diagramação
-          adapta-se automaticamente ao formato de impressão.
+          Se precisar guardar uma cópia, use o botão <strong>“Salvar em PDF”</strong> lá no cabeçalho: a página se adapta
+          sozinha para o formato de impressão.
         </p>
       </aside>
     </section>
@@ -220,63 +219,61 @@
       <h2 id="editorial-titulo">Um pote de feijão e uma pergunta</h2>
 
       <p>
-        Considere uma tarefa aparentemente simples: alguém deposita sobre a mesa um pote de vidro cheio de feijão e
-        pergunta quantos grãos há ali dentro. Contá-los um a um tomaria tempo, mas seria exequível. Agora amplie o
-        recipiente até as dimensões de um país continental, substitua os grãos por moradores e acrescente um desafio
-        decisivo: enquanto a contagem transcorre, pessoas nascem, envelhecem, mudam de cidade ou não estão em casa
-        quando o recenseador bate à porta. Essa é, em síntese, a complexidade de contar o Brasil.
+        Pensa numa tarefa que parece bem simples: alguém bota um pote de vidro cheio de feijão em cima da mesa e
+        pergunta quantos grãos tem ali dentro. Contar um por um ia tomar tempo, mas dava para fazer. Agora tente
+        aumentar esse pote até o tamanho de um país continental, troque os grãos por moradores e adicione um detalhe que
+        complica tudo: enquanto a contagem ainda está acontecendo, pessoas nascem, envelhecem, mudam de cidade ou não
+        estão em casa quando o recenseador bate na porta. Esse é, basicamente, o tamanho do desafio de contar o Brasil.
       </p>
 
       <p>
-        Esta revista nasceu como trabalho final da disciplina de Produção de Texto, mas ganhou fôlego próprio no
-        diálogo entre duas formações distintas: dois de nós cursamos Licenciatura em Matemática; a outra integrante, Geografia. À
-        primeira vista, as áreas parecem caminhar em trilhas separadas, entre equações de um lado e mapas territoriais
-        de outro. Ao investigar população, renda e desigualdade, contudo, constatamos que observávamos a mesma
-        realidade por janelas complementares. A Matemática fornece os instrumentos de medida; a Geografia aponta
-        onde e sobre quem essas medidas recaem; e a História lembra que, por trás de toda estatística, existiram
-        pessoas concretas em condições reais de vida.
+        Esta revista nasceu como trabalho final da disciplina de Produção de Texto, mas acabou ganhando fôlego próprio
+        na conversa entre duas formações diferentes: dois de nós cursamos Licenciatura em Matemática; a outra integrante,
+        Geografia. À primeira vista, parece que cada área anda por um caminho separado, com equações de um lado e mapas
+        territoriais de outro. Mas quando fomos pesquisar população, renda e desigualdade, percebemos que a gente estava
+        olhando para a mesma realidade por janelas que se completam. A Matemática traz as ferramentas de medida, a
+        Geografia mostra onde e sobre quem esses números caem, e a História lembra que, por trás de toda estatística,
+        existiram pessoas reais em situações concretas de vida.
       </p>
 
       <blockquote class="citacao">
-        Um número isolado não é virtuoso nem enganoso. O que determina o seu sentido é quem o produziu, com qual
-        método foi calculado e o que se escolheu exibir ou omitir ao lado dele.
+        Um número isolado não é bom nem enganoso. O que define o sentido dele é quem produziu, com qual método foi
+        calculado e o que escolheram mostrar ou deixar de fora ao lado dele.
       </blockquote>
 
       <p>
-        Ao redigir estas páginas, assumimos um pacto claro: escrever para o leitor não especializado, com rigor
-        conceitual e sem exigir conhecimento prévio de estatística ou demografia. Explicar com simplicidade não
-        significa empobrecer os conceitos; significa acolher com seriedade as perguntas fundamentais que muitas vezes
-        ficam sem resposta por receio de parecerem elementares. Sempre que um termo técnico surgir no texto, será
-        desmontado com exemplos concretos antes de avançarmos para as séries oficiais.
+        Na hora de escrever estas páginas, combinamos uma ideia clara: falar com o leitor que não é especialista,
+        mantendo o cuidado nos conceitos, mas sem exigir que ninguém chegue sabendo estatística ou demografia. Explicar
+        de um jeito simples não quer dizer empobrecer o assunto; quer dizer responder com seriedade às perguntas básicas
+        que muitas vezes ficam sem resposta por receio de parecerem bobas demais. Sempre que algum termo técnico aparece
+        no texto, a gente desmonta ele com exemplos comuns antes de partir para os dados oficiais.
       </p>
 
       <p>
-        Esta edição percorre quatro eixos principais. No primeiro, acompanhamos como o Brasil se conta desde o Censo
-        de 1872 e o que a forma da <em>pirâmide etária</em> revela sobre o passado e as próximas décadas. No segundo,
-        examinamos por que a “média” frequentemente distorce a leitura de salários e como a <em>mediana</em> corrige
-        essa perspectiva. No terceiro, traduzimos dois indicadores recorrentes no noticiário: o <em>Índice de Gini</em>
-        e o <em>IDH</em>. Por fim, no quarto, analisamos os recursos visuais que fazem um gráfico induzir conclusões
-        equivocadas sem alterar um único algarismo.
+        Esta edição passa por quatro eixos principais. No primeiro, acompanhamos como o Brasil se conta desde o Censo de
+        1872 e o que o formato da <em>pirâmide etária</em> revela sobre o passado e os próximos anos. No segundo,
+        olhamos porque a “média” muitas vezes distorce a leitura de salários e como a <em>mediana</em> ajuda a corrigir
+        essa visão. No terceiro, traduzimos dois indicadores muito citados no noticiário: o <em>Índice de Gini</em> e o
+        <em>IDH</em>. Por fim, no quarto, mostramos os recursos visuais que fazem um gráfico levar a conclusões erradas
+        sem precisar alterar um único algarismo.
       </p>
 
       <p>
-        Nos simuladores da seção “Mão na massa”, os conceitos podem ser testados na prática, por tentativa e
-        comparação. Ao final, reunimos um guia rápido de verificação cotidiana para evitar desinformação numérica e
-        uma entrevista com um profissional que trabalha diretamente com dados.
+        Nos simuladores da seção “Mão na massa”, dá para testar os conceitos na prática, tentando e comparando. Mais no
+        final, juntamos um guia rápido de checagem para o dia a dia, para evitar cair em número solto, além de um espaço
+        para entrevista com quem trabalha diretamente com dados.
       </p>
 
       <p>
-        Cabe ainda uma ressalva coerente com a proposta desta publicação: estatísticas públicas evoluem ao longo do
-        tempo. Os números citados foram conferidos em novembro de 2026 em fontes oficiais e reportagens baseadas
-        nelas, mas órgãos como o IBGE atualizam suas séries históricas quando novas bases censitárias são incorporadas.
-        Por isso, registramos ano, edição e referência de cada dado. Leia com espírito crítico, confira as fontes e
-        mantenha sempre a disposição de perguntar. Boa leitura.
+        Vale ainda um aviso importante que combina com a proposta da revista: estatística pública muda ao longo do
+        tempo. Os números citados aqui foram conferidos em novembro de 2026 em fontes oficiais e reportagens baseadas
+        nelas, mas órgãos como o IBGE atualizam suas séries históricas quando entram novas bases censitárias. Por isso,
+        anotamos ano, edição e referência de cada dado. Leia com calma, confira as fontes e continue perguntando. Boa
+        leitura.
       </p>
 
       <p class="assinatura">
-        — <span class="preencher">Miguel, Juan</span> e
-        <span class="preencher">Livia</span>,
-        <span class="preencher">IFRN</span>, novembro de 2026.
+        Miguel, Juan e Lívia, IFRN, novembro de 2026.
       </p>
     </article>
 
@@ -287,213 +284,208 @@
       <p class="genero-etiqueta">Reportagem · Demografia e História · <span class="tempo-leitura">leitura de cerca de 12 min</span></p>
       <h2 id="rep1-titulo">Quem conta o Brasil?</h2>
       <p class="linha-fina">
-        Em 1872, o Império realizou o primeiro levantamento nacional de seus habitantes. Cento e cinquenta anos mais
-        tarde, o desenho dessa população mudou de silhueta: a base estreitou, o centro se alargou e a antiga pirâmide
-        passou a lembrar um barril.
+        Em 1872, o Império realizou o primeiro levantamento nacional de seus habitantes. Cento e cinquenta anos depois, o
+        desenho dessa população mudou de silhueta: a base afinou, o meio ficou mais largo e a antiga pirâmide passou a
+        lembrar um barril.
       </p>
-      <p class="assinatura">Texto: <span class="preencher">[PREENCHER: autores]</span> <strong>temos que decidir isso</strong></p>
+      <p class="assinatura">Texto: <span class="preencher">rever quem vai assinar aqui</span></p>
 
       <aside class="box box--objetivos" aria-labelledby="obj1-titulo">
         <p class="box__selo">Nesta reportagem você vai aprender</p>
         <h4 id="obj1-titulo" class="so-leitor">Objetivos de leitura</h4>
         <ul>
-          <li>por que os países realizam censos e como ocorreu o levantamento de 1872;</li>
-          <li>a diferença metodológica entre censo e pesquisa por amostra;</li>
-          <li>como interpretar uma pirâmide etária e por que a silhueta brasileira está mudando;</li>
-          <li>o significado de “idade mediana” e “índice de envelhecimento”.</li>
+          <li>por que os países realizam censos e como aconteceu o levantamento de 1872;</li>
+          <li>a diferença na prática entre censo e pesquisa por amostra;</li>
+          <li>como ler uma pirâmide etária e por que a silhueta do Brasil está mudando;</li>
+          <li>o que significam “idade mediana” e “índice de envelhecimento”.</li>
         </ul>
       </aside>
 
       <h3>Por que um país precisa contar sua população</h3>
 
       <p>
-        Na cozinha de uma escola pública, a equipe responsável pela merenda precisa saber quantos estudantes estão
-        presentes naquele dia antes de dimensionar as panelas: sem esse dado, corre-se o risco de faltar alimento ou
-        de gerar desperdício. Em escala nacional, o planejamento de políticas públicas enfrenta o mesmo princípio. Para
-        decidir quantas escolas construir, quantas doses de vacina adquirir, onde ampliar o transporte coletivo e
-        quantos profissionais de saúde formar, o Estado depende de informações precisas sobre quantos habitantes
-        existem, qual a sua distribuição etária e onde residem. Sem essa base, governa-se às cegas.
+        Na cozinha de uma escola pública, a equipe da merenda precisa saber quantos alunos foram naquele dia antes de
+        colocar as panelas no fogo: sem essa informação, corre o risco de faltar comida ou de gerar desperdício. Em
+        escala nacional, o planejamento de políticas públicas segue a mesma lógica. Para decidir quantas escolas
+        construir, quantas doses de vacina comprar, onde ampliar o transporte público e quantos profissionais de saúde
+        formar, o Estado depende de dados confiáveis sobre quantos habitantes existem, qual a distribuição por idade e
+        onde essas pessoas moram. Sem essa base, qualquer governo decide às cegas.
       </p>
 
       <p>
-        A ciência dedicada a esse estudo chama-se <strong>Demografia</strong>. O termo origina-se do grego:
-        <em>demos</em> significa “povo” e <em>graphein</em> significa “escrever” ou “descrever”. Trata-se, portanto,
-        da disciplina que descreve as populações humanas — quantos somos, quantos nascem, quantos morrem, quem se
-        desloca pelo território e como essa estrutura transforma-se no tempo.
+        A ciência que cuida desse estudo se chama <strong>Demografia</strong>. A palavra vem do grego: <em>demos</em>
+        significa “povo” e <em>graphein</em> significa “escrever” ou “descrever”. Então é justamente a disciplina que
+        descreve as populações humanas (quantos somos, quantos nascem, quantos morrem, quem muda de região e como essa
+        estrutura vai se transformando com o tempo).
       </p>
 
       <aside class="box box--curiosidade">
         <p class="box__selo">Curiosidade</p>
         <h4>A origem da palavra “censo”</h4>
         <p>
-          Na Roma Antiga, magistrados registravam periodicamente os cidadãos e seus bens com duas finalidades
-          práticas: identificar quem poderia integrar o exército e organizar a cobrança de impostos. Dessa prática
-          provém o termo latino <em>census</em>, origem da palavra portuguesa <strong>censo</strong>. No vocabulário
-          técnico também são correntes <strong>recenseamento</strong> (sinônimo de censo) e <strong>recenseador</strong>
-          (o profissional responsável pela coleta domiciliar).
+          Na Roma Antiga, magistrados registravam de tempos em tempos os cidadãos e seus bens com dois objetivos bem
+          práticos: saber quem podia entrar para o exército e organizar a cobrança de impostos. Dessa prática veio o
+          termo em latim <em>census</em>, origem da palavra <strong>censo</strong>. No vocabulário técnico também
+          aparecem bastante <strong>recenseamento</strong> (sinônimo de censo) e <strong>recenseador</strong> (o
+          profissional que vai às casas coletar os dados).
         </p>
       </aside>
 
       <h3>1872: o primeiro recenseamento do Império</h3>
 
       <p>
-        Antes de 1872, o Brasil nunca havia realizado uma contagem simultânea de toda a sua população. Existiam apenas
-        estimativas gerais e levantamentos parciais — como os arrolamentos feitos na cidade do Rio de Janeiro em 1799
-        e 1821, ou em São Paulo ainda no século XVIII —, insuficientes para compor um retrato integrado do território.
+        Antes de 1872, o Brasil nunca tinha feito uma contagem simultânea de toda a sua população. Haviam apenas
+        estimativas gerais e levantamentos parciais, como as contagens feitas na cidade do Rio de Janeiro em 1799 e
+        1821, ou em São Paulo ainda no século XVIII, que não davam conta de montar um retrato inteiro do território.
       </p>
 
       <p>
-        Em 1870, uma lei imperial instituiu a Diretoria Geral de Estatística, órgão encarregado de organizar a
-        operação. Dois anos mais tarde, com data de referência em 1º de agosto de 1872, executou-se o primeiro
-        levantamento nacional: o <em>Recenseamento da População do Império do Brasil</em>. O total oficialmente apurado
-        somou <strong>9.930.478 habitantes</strong>. Os quadros de cada província e do Município Neutro (a cidade do
-        Rio de Janeiro, então capital do Império) foram publicados entre 1873 e 1876 pela Typographia de G. Leuzinger
-        &amp; Filhos em <strong>12 volumes</strong>.
+        Em 1870, uma lei imperial criou a Diretoria Geral de Estatística para organizar essa operação. Dois anos mais
+        tarde, tomando como data de referência o dia 1º de agosto de 1872, foi feito o primeiro levantamento nacional: o
+        <em>Recenseamento da População do Império do Brasil</em>. O total apurado fechou em
+        <strong>9.930.478 habitantes</strong>. Os quadros de cada província e do Município Neutro (a cidade do Rio de
+        Janeiro, então capital do Império) foram publicados entre 1873 e 1876 pela Typographia de G. Leuzinger &amp;
+        Filhos em <strong>12 volumes</strong>.
       </p>
 
       <p>
-        Um aspecto metodológico chama a atenção dos pesquisadores até hoje: já em sua estreia, o Censo combinou
-        contagem direta e estimativa técnica. Em 32 paróquias, os dados não puderam ser recolhidos na data prevista;
-        para não deixar lacunas no resultado nacional, os responsáveis estimaram a população dessas localidades em
-        181.583 moradores. Somando contados e estimados, o contingente total alcançava cerca de <strong>10,1 milhões
-        de habitantes</strong>. Em perspectiva comparada, o Brasil inteiro de 1872 era menor do que um único município
-        brasileiro contemporâneo: no Censo 2022, somente a cidade de São Paulo somava 11.451.999 moradores. E o país
-        atual, com mais de 203 milhões de habitantes, supera em mais de vinte vezes a população daquele Império.
+        Um detalhe metodológico chama atenção até hoje: já na estreia, o Censo juntou contagem direta com estimativa
+        técnica. Em 32 paróquias, os dados não puderam ser recolhidos na data marcada; para não deixar buracos no
+        resultado nacional, os responsáveis estimaram a população desses lugares em 181.583 moradores. Somando contados
+        e estimados, o total chegava perto de <strong>10,1 milhões de habitantes</strong>. Comparando com hoje, o Brasil
+        inteiro de 1872 era menor do que um único município brasileiro atual: no Censo 2022, só a cidade de São Paulo
+        tinha 11.451.999 moradores. E o país de hoje, com mais de 203 milhões de habitantes, passa de vinte vezes a
+        população daquele Império.
       </p>
 
       <p>
-        Há também um dado histórico incontornável. Em 1872, dezesseis anos antes da abolição, o trabalho escravo
-        ainda estruturava o país. O recenseamento contabilizou <strong>1.510.806 pessoas escravizadas</strong> — cerca
-        de 15 em cada 100 habitantes. Por ser o único censo nacional a registrar a escravidão em todo o território,
-        esses volumes representam fonte primária inestimável para historiadores e sociólogos. Eles demonstram que
-        contar populações nunca é uma operação neutra: as perguntas formuladas (condição jurídica, instrução,
-        religião, profissão) refletem o que a sociedade da época julgava essencial classificar.
+        Tem também um dado histórico que não dá para ignorar. Em 1872, dezesseis anos antes da abolição, o trabalho
+        escravo ainda estruturava o país. O recenseamento contou <strong>1.510.806 pessoas escravizadas</strong> (mais
+        ou menos 15 em cada 100 habitantes). Por ter sido o único censo nacional a registrar a escravidão no território
+        inteiro, esses volumes são uma fonte primária muito importante para historiadores e sociólogos. Eles mostram
+        que contar populações nunca é uma tarefa neutra: as perguntas escolhidas (condição jurídica, instrução,
+        religião, profissão) refletem o que a sociedade daquela época achava essencial classificar.
       </p>
 
       <aside class="box box--historia" aria-labelledby="linha-tempo-titulo">
         <p class="box__selo">Linha do tempo</p>
         <h4 id="linha-tempo-titulo">Os censos do Brasil em marcos históricos</h4>
         <ol class="linha-do-tempo">
-          <li><strong>1872</strong> — Primeiro Censo nacional, no Império: 9.930.478 habitantes contados (cerca de 10,1 milhões com estimativas paroquiais).</li>
-          <li><strong>1880</strong> — Previsto para o ciclo decenal, não chegou a ser realizado em razão de impasses políticos e administrativos.</li>
-          <li><strong>1890 e 1900</strong> — Levantamentos já no período republicano, marcados por fortes limitações operacionais.</li>
-          <li><strong>1910</strong> — Novo censo cancelado antes da ida a campo.</li>
-          <li><strong>1920</strong> — Censo geral que buscou recompor a série demográfica após o intervalo das décadas anteriores.</li>
-          <li><strong>1930</strong> — Previsto para setembro, foi interrompido pela Revolução de 1930.</li>
-          <li><strong>1936–1938</strong> — Instala-se em 1936 o Instituto Nacional de Estatística (INE), rebatizado em 1938 como IBGE, integrando estatística e geografia em uma mesma instituição.</li>
-          <li><strong>1940</strong> — Primeiro Censo conduzido pelo IBGE: 41.236.315 habitantes. Marca o início da fase moderna dos recenseamentos, com assessoria técnica do demógrafo italiano Giorgio Mortara.</li>
-          <li><strong>1950</strong> — 51.944.397 habitantes. O país já tinha passado de 50 milhões, e a população só aumentava.</li>
-          <li><strong>1960</strong> — Cerca de 70 milhões de habitantes.</li>
-          <li><strong>1970</strong> — 93.139.037 habitantes.</li>
-          <li><strong>1980</strong> — 119.002.706 habitantes. É a base da pirâmide de 1980 desta revista.</li>
-          <li><strong>1991</strong> — 146.825.475 habitantes.</li>
-          <li><strong>2000</strong> — 169.799.170 habitantes.</li>
-          <li><strong>2010</strong> — 190.755.799 habitantes. Foi a menor taxa de crescimento da série até então: cerca de 1,17% ao ano.</li>
-          <li><strong>2022</strong> — Censo mais recente: 203.080.756 habitantes. Adiado pela pandemia de covid-19 e restrições orçamentárias, teve a coleta iniciada em 1º de agosto.</li>
+          <li><strong>1872:</strong> Primeiro Censo nacional, no Império: 9.930.478 habitantes contados (cerca de 10,1 milhões juntando as estimativas das paróquias).</li>
+          <li><strong>1880:</strong> Estava previsto para fechar o ciclo de dez anos, mas acabou não acontecendo por impasses políticos e administrativos.</li>
+          <li><strong>1890 e 1900:</strong> Levantamentos já na República, marcados por muitas dificuldades de organização e coleta.</li>
+          <li><strong>1910:</strong> Novo censo cancelado antes mesmo das equipes irem a campo.</li>
+          <li><strong>1920:</strong> Censo geral que tentou recompor os dados demográficos depois do intervalo das décadas anteriores.</li>
+          <li><strong>1930:</strong> Marcado para setembro, foi interrompido pela Revolução de 1930.</li>
+          <li><strong>1936–1938:</strong> Em 1936 nasce o Instituto Nacional de Estatística (INE), rebatizado em 1938 como IBGE, juntando estatística e geografia num mesmo órgão.</li>
+          <li><strong>1940:</strong> Primeiro Censo feito pelo IBGE: 41.236.315 habitantes. Marca o início da fase moderna das contagens, com ajuda técnica do demógrafo italiano Giorgio Mortara.</li>
+          <li><strong>1950:</strong> 51.944.397 habitantes. O país já tinha passado de 50 milhões, e a população só aumentava.</li>
+          <li><strong>1960:</strong> Cerca de 70 milhões de habitantes.</li>
+          <li><strong>1970:</strong> 93.139.037 habitantes.</li>
+          <li><strong>1980:</strong> 119.002.706 habitantes. É a base da pirâmide de 1980 desta revista.</li>
+          <li><strong>1991:</strong> 146.825.475 habitantes.</li>
+          <li><strong>2000:</strong> 169.799.170 habitantes.</li>
+          <li><strong>2010:</strong> 190.755.799 habitantes. Foi a menor taxa de crescimento da série até ali: perto de 1,17% ao ano.</li>
+          <li><strong>2022:</strong> Censo mais recente: 203.080.756 habitantes. Adiado pela pandemia de covid-19 e falta de orçamento, teve a coleta iniciada em 1º de agosto.</li>
         </ol>
         <br>
-        <p>Entre 1872 e 2022, a população brasileira passou de menos de 10 milhões para mais de 203 milhões: mais de 20 vezes.</p>
+        <p>Entre 1872 e 2022, a população brasileira passou de menos de 10 milhões para mais de 203 milhões: cresceu mais de 20 vezes.</p>
         <p class="box__nota">Fonte: IBGE (ver Referências).</p>
       </aside>
 
       <h3>Como se conta um país inteiro hoje</h3>
 
       <p>
-        Embora os formulários impressos tenham cedido espaço a tablets conectados, o princípio fundamental do Censo
-        permanece o mesmo de 1872: o recenseador visita <em>todos</em> os domicílios do território nacional, das
-        capitais às comunidades ribeirinhas alcançadas apenas por embarcação. É essa cobertura exaustiva que distingue
-        um <strong>censo</strong> de uma <strong>pesquisa por amostra</strong>, que consulta apenas uma fração
-        representativa da população para estimar o comportamento do conjunto.
+        Mesmo que os formulários de papel tenham dado espaço para tablets conectados, a base do Censo continua a mesma
+        de 1872: o recenseador visita <em>todos</em> os domicílios do país, desde as capitais até comunidades ribeirinhas
+        onde só se chega de barco. É essa cobertura completa que separa um <strong>censo</strong> de uma
+        <strong>pesquisa por amostra</strong>, que entrevista apenas uma parte representativa da população para estimar
+        como está o todo.
       </p>
 
       <p>
-        Uma analogia simples ajuda a esclarecer a diferença metodológica. Para avaliar o ponto do sal em uma panela
-        de sopa, não é necessário consumir todo o conteúdo: basta misturar uniformemente e provar uma colher — essa é
-        a lógica da <strong>amostra</strong>. O censo equivale a examinar a panela por inteiro, colher por colher. O
-        custo operacional é consideravelmente maior, razão pela qual o IBGE realiza o Censo a cada década e conduz,
-        nos intervalos entre censos, levantamentos amostrais contínuos como a PNAD Contínua, examinada na próxima
-        reportagem.
+        Uma comparação simples ajuda a entender essa diferença de método. Para saber se uma panela de sopa está boa de
+        sal, não precisa tomar a panela inteira: basta mexer bem e provar uma colher. Essa é a ideia da
+        <strong>amostra</strong>. O censo seria checar a panela toda, colher por colher. Como o custo é muito maior, o
+        IBGE faz o Censo de dez em dez anos e realiza, nos intervalos entre um e outro, pesquisas por amostra contínuas
+        como a PNAD Contínua, que vamos ver na próxima reportagem.
       </p>
 
       <p>
-        Em 2022, a maior parte dos lares respondeu ao questionário básico, enquanto cerca de 11% dos domicílios
-        preencheram o questionário da amostra, com 77 quesitos. Já nas primeiras divulgações destacou-se uma mudança
-        estrutural: a média de moradores por domicílio recuou de 3,31 pessoas, em 2010, para 2,79 em 2022. Famílias
-        menores explicam por que o número de residências continua crescendo em ritmo mais rápido do que a própria
-        população. Todas as respostas individuais são protegidas por sigilo legal, sendo divulgados apenas resultados
-        agregados.
+        Em 2022, a maioria das casas responderam ao questionário básico, enquanto cerca de 11% dos domicílios preencheram
+        o questionário da amostra, bem mais detalhado, com 77 quesitos. Logo nas primeiras divulgações já apareceu uma
+        mudança clara: a média de moradores por domicílio caiu de 3,31 pessoas, em 2010, para 2,79 em 2022. Famílias
+        menores explicam por que o número de casas continua crescendo num ritmo mais rápido do que a própria população. E
+        todas as respostas individuais têm proteção por lei, sendo divulgados só os resultados somados.
       </p>
 
       <p>
-        Ao fim da apuração, o Brasil somava <strong>203.080.756 habitantes</strong> em agosto de 2022. Desde 2010, a
-        população cresceu 6,5%, o equivalente a uma taxa média anual composta de 0,52% — o ritmo mais baixo desde
-        1872. O resultado também trouxe uma surpresa relevante: estimativas anteriores do próprio IBGE projetavam
-        213,3 milhões de habitantes em 2021, cerca de dez milhões acima da contagem efetiva. A diferença confirma que,
-        por mais refinados que sejam os modelos matemáticos, nada substitui a verificação direta porta a porta.
+        No fim da apuração, o Brasil somava <strong>203.080.756 habitantes</strong> em agosto de 2022. Desde 2010, a
+        população cresceu 6,5%, o equivalente a uma taxa média de 0,52% ao ano, o ritmo mais baixo desde 1872. O
+        resultado trouxe também uma surpresa grande: projeções anteriores do próprio IBGE estimavam 213,3 milhões de
+        habitantes em 2021, cerca de dez milhões acima do que foi contado na rua. Essa diferença mostra que, por mais
+        ajustados que sejam os modelos matemáticos, nada substitui a conferência direta de porta em porta.
       </p>
 
-      <h3>A pirâmide etária e a transição para o barril</h3>
+      <h3>A pirâmide etária e a mudança para o barril</h3>
 
       <p>
-        O conceito que dá título a esta edição torna-se visível com um exercício de ordenação. Imagine organizar toda
-        a população em filas separadas por faixas de idade — de 0 a 4 anos, de 5 a 9, de 10 a 14, e assim por diante
-        até os grupos mais longevos. Se cada fila for desenhada como uma barra horizontal proporcional ao número de
-        pessoas daquela idade, empilhando os mais jovens na base e os mais velhos no topo e dividindo homens à esquerda
-        e mulheres à direita, forma-se uma <strong>pirâmide etária</strong>.
+        O conceito que dá título a esta edição fica fácil de enxergar com um exercício de ordenação. Imagine organizar
+        toda a população em filas separadas por faixas de idade (de 0 a 4 anos, de 5 a 9, de 10 a 14, e assim por
+        diante até os grupos mais velhos). Se cada fila for desenhada como uma barra horizontal proporcional ao número de
+        pessoas daquela idade, empilhando os mais novos na base, os mais velhos no topo e dividindo homens na esquerda e
+        mulheres na direita, temos uma <strong>pirâmide etária</strong>.
       </p>
 
       <p>
-        Durante décadas, o Brasil apresentou uma pirâmide clássica: base muito larga e topo estreito. Duas causas
-        explicavam esse perfil. Primeiro, a fecundidade elevada — no início dos anos 1960, a média ultrapassava seis
-        filhos por mulher. Segundo, a mortalidade precoce em diversas idades, que reduzia o contingente que alcançava
-        os degraus superiores.
+        Durante décadas, o Brasil teve uma pirâmide clássica: base bem larga e topo fino. Dois motivos explicavam esse
+        perfil. Primeiro, a fecundidade alta, já que no começo dos anos 1960 a média passava de seis filhos por mulher.
+        Segundo, a mortalidade precoce em várias idades, que diminuía bastante o grupo que conseguia chegar nos degraus
+        de cima.
       </p>
 
       <p>
         Esse equilíbrio mudou em poucas gerações. A taxa de fecundidade total caiu de 2,32 filhos por mulher em 2000
-        para 1,75 em 2010 e atingiu <strong>1,57 em 2023</strong> — bem abaixo da taxa aproximada de reposição de 2,1
-        filhos por mulher, desconsiderando fluxos migratórios. O número de nascimentos acompanhou essa trajetória: em
-        2022 foram registrados 2.542.298 bebês, o menor total desde 1977 e 11,4% abaixo da média observada entre 2010
-        e 2019. Paralelamente, a esperança de vida ao nascer subiu de 71,1 anos em 2000 para 76,4 anos em 2023. Com
-        menos nascimentos na base e maior sobrevivência até idades avançadas, o centro do gráfico alarga-se e o
-        desenho passa a lembrar um barril.
+        para 1,75 em 2010 e chegou a <strong>1,57 em 2023</strong>, bem abaixo da taxa de reposição de 2,1 filhos por
+        mulher (desconsiderando migrações). O total de nascimentos seguiu o mesmo caminho: em 2022 foram registrados
+        2.542.298 bebês, o menor número desde 1977 e 11,4% abaixo da média observada entre 2010 e 2019. Ao mesmo tempo,
+        a esperança de vida ao nascer subiu de 71,1 anos em 2000 para 76,4 anos em 2023. Com menos nascimentos na base e
+        mais gente chegando até idades avançadas, o meio do gráfico se alarga e o desenho começa a lembrar um barril.
       </p>
 
       <p>
-        O Censo 2022 documentou essa virada em números expressivos. Pela primeira vez, crianças e adolescentes de 0 a
-        14 anos ficaram abaixo de um quinto da população: 19,8%, frente a 38,2% em 1980. Em contrapartida, o grupo
-        com 65 anos ou mais passou de 7,4% em 2010 para 10,9% em 2022 — totalizando 22.169.101 idosos, um acréscimo
-        de 57,4% em doze anos. Como consequência, a <strong>idade mediana</strong> brasileira avançou de 29 para 35
-        anos: colocando todos os mais de 203 milhões de habitantes em ordem crescente de idade, a pessoa situada
-        exatamente no centro da fila tem 35 anos.
+        O Censo 2022 registrou essa virada em números bem fortes. Pela primeira vez, crianças e adolescentes de 0 a 14
+        anos ficaram abaixo de um quinto da população: 19,8%, frente a 38,2% em 1980. Já o grupo com 65 anos ou mais
+        subiu de 7,4% em 2010 para 10,9% em 2022, somando 22.169.101 idosos (um crescimento de 57,4% em doze anos). Por
+        causa disso, a <strong>idade mediana</strong> do brasileiro passou de 29 para 35 anos: colocando todos os mais
+        de 203 milhões de habitantes em fila por ordem crescente de idade, quem fica bem no meio da fila tem 35 anos.
       </p>
 
       <aside class="box box--conta">
         <p class="box__selo">Conta de cabeça</p>
         <h4>O índice de envelhecimento</h4>
         <p>
-          Para sintetizar essa transição, a demografia utiliza uma razão direta: quantas pessoas de 65 anos ou mais
-          existem para cada grupo de 100 crianças de 0 a 14 anos? Esse é o <strong>índice de envelhecimento</strong>.
-          Em 2010, o indicador nacional estava em 30,7 — cerca de 31 idosos para cada 100 crianças. Em 2022, saltou
-          para <strong>55,2</strong>. Mantida a trajetória atual, o país caminha para um marco histórico em que o
-          contingente de idosos ultrapassará o de crianças.
+          Para resumir essa mudança, a demografia usa uma razão bem direta: quantas pessoas com 65 anos ou mais existem
+          para cada grupo de 100 crianças de 0 a 14 anos? Esse é o <strong>índice de envelhecimento</strong>. Em 2010, o
+          indicador do país estava em 30,7 (cerca de 31 idosos para cada 100 crianças). Em 2022, pulou para
+          <strong>55,2</strong>. Mantendo esse ritmo, o país caminha para um momento onde o número de idosos vai passar
+          o de crianças.
         </p>
       </aside>
 
       <p>
-        Esse processo não configura um problema em si, mas uma conquista resultante de vacinação, saneamento, acesso
-        médico e segurança alimentar. Ao mesmo tempo, uma sociedade mais longeva exige reorientação de políticas
-        públicas: menor demanda relativa por creches e maternidades, maior necessidade de hospitais, previdência
-        sustentável, transporte acessível e redes de cuidado. Pelas projeções populacionais do IBGE (revisão de 2024),
-        a população total deve parar de crescer por volta de 2041, e a esperança de vida ao nascer pode alcançar
-        83,9 anos em 2070.
+        Esse processo não é um problema em si, mas uma conquista que veio junto com vacinação, saneamento, acesso médico
+        e segurança alimentar. Só que uma sociedade que vive mais exige ajustes nas políticas públicas: menor procura
+        relativa por creches e maternidades, e maior necessidade de hospitais, previdência sustentável, transporte
+        acessível e redes de cuidado. Pelas projeções do IBGE (revisão de 2024), a população total deve parar de crescer
+        por volta de 2041, e a esperança de vida ao nascer pode chegar a 83,9 anos em 2070.
       </p>
 
       <p>
-        A análise geográfica acrescenta uma dimensão decisiva, pois o envelhecimento avança em ritmos distintos pelo
-        território. No Censo 2022, Sudeste e Sul já registravam cerca de 12% da população com 65 anos ou mais,
-        enquanto o Norte exibia idade mediana de 29 anos — chegando a apenas 26 anos em Roraima, frente aos 38 anos
-        do Rio Grande do Sul. Dentro do próprio país coexistem diferentes momentos da transição demográfica.
+        A análise geográfica traz um ponto decisivo para essa conta, porque o envelhecimento avança em ritmos diferentes
+        pelo território. No Censo 2022, Sudeste e Sul já tinham cerca de 12% da população com 65 anos ou mais, enquanto
+        o Norte mostrava idade mediana de 29 anos, chegando a apenas 26 anos em Roraima contra os 38 anos do Rio Grande
+        do Sul. Dentro do mesmo país convivem momentos bem diferentes dessa transição.
       </p>
 
       <table class="tabela-dados">
@@ -528,9 +520,8 @@
           <p class="ferramenta__selo">Mão na massa nº 1</p>
           <h3 id="ferr-pir-titulo">A pirâmide ao longo do tempo</h3>
           <p id="pir-ajuda">
-            Desloque o controle para alternar entre 1950, 1980, 2000, 2022 e a projeção para 2040, ou selecione
-            “Tocar animação” para acompanhar a mudança contínua da estrutura etária. À esquerda estão os homens; à
-            direita, as mulheres.
+            Mexa no controle para alternar entre 1950, 1980, 2000, 2022 e a projeção para 2040, ou selecione “Tocar
+            animação” para acompanhar a mudança contínua das idades. À esquerda ficam os homens; à direita, as mulheres.
           </p>
         </header>
 
@@ -546,10 +537,10 @@
             <desc id="pir-svg-desc">Barras horizontais por faixa etária, com homens à esquerda e mulheres à direita. A silhueta varia conforme o ano escolhido.</desc>
           </svg>
           <figcaption>
-            Fontes: IBGE — Censos Demográficos de 1950, 1980 e 2000 (Anuário Estatístico do Brasil 2024), Censo 2022 e
-            Projeções da População (revisão 2024). As barras quinquenais têm caráter didático aproximado: como algumas
-            séries históricas agrupam faixas de dez anos, esses intervalos foram subdivididos para manter a escala
-            uniforme. O ano de 2040 corresponde a uma projeção de tendência, e não a uma contagem censitária.
+            Fontes: IBGE, pelos Censos Demográficos de 1950, 1980 e 2000 (Anuário Estatístico do Brasil 2024), Censo 2022
+            e Projeções da População (revisão 2024). As barras de cinco em cinco anos têm caráter didático aproximado:
+            como algumas séries antigas juntam faixas de dez anos, esses intervalos foram divididos para manter a escala
+            igual. O ano de 2040 é uma projeção de tendência, não uma contagem censitária.
           </figcaption>
         </figure>
 
@@ -571,8 +562,8 @@
           <p class="ferramenta__selo">Mão na massa extra</p>
           <h3 id="ferr-pos-titulo">Onde você está na pirâmide?</h3>
           <p id="pos-ajuda">
-            Digite a sua idade (ou a de alguém da sua família) e descubra em que ponto da fila de idades do Brasil
-            ela fica. Os números são aproximados, calculados a partir da pirâmide desta reportagem.
+            Digite a sua idade (ou a de alguém da sua família) e veja em que ponto da fila de idades do Brasil ela fica.
+            Os números são aproximados, calculados a partir da pirâmide desta reportagem.
           </p>
         </header>
 
@@ -599,19 +590,19 @@
         <p class="box__selo">Curiosidade</p>
         <h4>Por que a pirâmide etária interessa além da Matemática</h4>
         <p>
-          A silhueta demográfica sintetiza eventos históricos sem recorrer a texto. Um recuo acentuado em determinada
-          faixa costuma denunciar guerras, epidemias ou crises econômicas que reduziram os nascimentos naquele período.
-          Já uma geração muito numerosa avança pelo gráfico como uma onda contínua: pressiona primeiro as
-          maternidades e escolas, depois o mercado de trabalho e, décadas adiante, o sistema previdenciário. Comparar
-          pirâmides de municípios ou países distintos é ler duas histórias sociais em paralelo.
+          O desenho da população acaba resumindo eventos históricos sem precisar de texto. Um recuo forte em uma faixa
+          costuma mostrar guerras, epidemias ou crises econômicas que diminuíram os nascimentos naquele tempo. Já uma
+          geração muito numerosa avança pelo gráfico como uma onda contínua: primeiro pressiona maternidades e escolas,
+          depois o mercado de trabalho e, décadas na frente, o sistema previdenciário. Comparar pirâmides de cidades ou
+          países diferentes é ler duas histórias sociais lado a lado.
         </p>
       </aside>
 
       <aside class="box box--resumo" aria-labelledby="resumo1-titulo">
         <p class="box__selo">Para guardar</p>
         <h4 id="resumo1-titulo">Em uma frase</h4>
-        <p>O Brasil realiza censos nacionais desde 1872, e a pirâmide etária mostra um país com menos nascimentos, maior longevidade e transição gradual para o formato de barril.</p>
-        <p class="desafio"><strong>Exercício sugerido:</strong> compare quantos irmãos teve a pessoa mais velha da sua família com o tamanho da geração atual. A diferença espelha, na escala doméstica, a transformação registrada pelos censos.</p>
+        <p>O Brasil faz censos nacionais desde 1872, e a pirâmide etária mostra um país com menos nascimentos, maior longevidade e transição gradual para o formato de barril.</p>
+        <p class="desafio"><strong>Exercício sugerido:</strong> compare quantos irmãos teve a pessoa mais velha da sua família com o tamanho da geração atual. A diferença mostra, dentro de casa, a mudança registrada pelos censos.</p>
       </aside>
     </article>
 
@@ -622,15 +613,15 @@
       <p class="genero-etiqueta">Crônica · Ficção · <span class="tempo-leitura">leitura de cerca de 3 min</span></p>
       <h2 id="cronica-titulo">O pote de feijão bate à porta</h2>
       <p class="linha-fina">
-        Uma tarde de agosto de 2022, uma recenseadora cansada, uma menina atenta e um senhor que nunca soube ao
-        certo o ano de seu nascimento. (Narrativa ficcional inspirada no trabalho de campo de quem percorreu o país
-        durante o Censo.)
+        Uma tarde de agosto de 2022, uma recenseadora cansada, uma menina atenta e um senhor que nunca soube ao certo
+        o ano em que nasceu. (Narrativa fictícia inspirada no trabalho de campo de quem percorreu o país durante o
+        Censo.)
       </p>
 
       <p>
         Passava das quatro da tarde quando Marta parou diante do portão azul, na última rua do bairro. Já havia batido
         em trinta e duas portas desde cedo. Em três, ninguém atendeu; em outra, o cachorro encerrou a conversa antes
-        do cumprimento. Ela ajeitou o colete, conferiu a carga do tablet — suficiente para mais uma ou duas casas — e
+        do cumprimento. Ela ajeitou o colete, conferiu a carga do tablet (que só dava para mais uma ou duas casas) e
         bateu palmas, como se faz nas ruas onde campainha ainda é novidade de bairro central.
       </p>
 
@@ -709,86 +700,84 @@
         ser contado.
       </p>
 
-      <p class="assinatura">Texto: <span class="preencher">[PREENCHER: autores]</span> · Ficção     <strong>temos que decidir isso</strong></p>
-    </article>
-
-    <!-- =====================================================================
+      <p class="assinatura">Texto: <span class="preencher">rever quem vai assinar aqui</span> · Ficção</p>
+  </article>
+  <!-- =====================================================================
          BLOCO 6 — REPORTAGEM 2: MÉDIA × MEDIANA
          ===================================================================== -->
     <article class="reportagem" id="reportagem-media" aria-labelledby="rep2-titulo">
       <p class="genero-etiqueta">Reportagem · Matemática do cotidiano · <span class="tempo-leitura">leitura de cerca de 10 min</span></p>
       <h2 id="rep2-titulo">O bilionário que entrou na sala</h2>
       <p class="linha-fina">
-        “A renda média do brasileiro subiu.” A manchete soa positiva, mas muitas vezes esconde mais do que esclarece.
-        Entenda por que uma única renda extrema desloca a média de todo um grupo e como a mediana preserva a visão de
-        quem ocupa o centro da fila.
+        “A renda média do brasileiro subiu.” A manchete até parece boa, mas muitas vezes esconde mais do que explica.
+        Entenda por que uma única renda fora da curva puxa a média de todo mundo e como a mediana segura o retrato de
+        quem está no meio da fila.
       </p>
-      <p class="assinatura">Texto: <span class="preencher">[PREENCHER: autores]</span> <strong>temos que decidir isso</strong></p>
+      <p class="assinatura">Texto: <span class="preencher">rever quem vai assinar aqui</span></p>
 
       <aside class="box box--objetivos" aria-labelledby="obj2-titulo">
         <p class="box__selo">Nesta reportagem você vai aprender</p>
         <h4 id="obj2-titulo" class="so-leitor">Objetivos de leitura</h4>
         <ul>
-          <li>a distinção entre média, mediana e moda em exemplos concretos;</li>
-          <li>por que valores extremos distorcem a média sem abalar a mediana;</li>
-          <li>o que revelam os dados recentes de renda do Brasil (IBGE);</li>
-          <li>em que situações cada medida estatística é mais adequada.</li>
+          <li>a diferença entre média, mediana e moda com exemplos simples;</li>
+          <li>por que valores muito altos ou muito baixos distorcem a média sem mexer quase nada na mediana;</li>
+          <li>o que mostram os dados recentes de renda no Brasil (IBGE);</li>
+          <li>quando faz mais sentido usar cada medida.</li>
         </ul>
       </aside>
 
       <h3>A festa das 90 balas</h3>
 
       <p>
-        Considere uma festa infantil com dez crianças diante de uma tigela de balas. Uma delas antecipa-se e recolhe
-        90 unidades; as nove restantes ficam com apenas uma bala cada. Ao final da tarde, um adulto pergunta quantas
-        balas, em média, cada criança recebeu.
+        Pense numa festinha de criança com dez meninos na frente de uma tigela de balas. Um deles se adianta, enche a
+        mão e pega 90 balas de uma vez; os outros nove ficam com apenas uma bala cada um. No fim da tarde, alguém
+        pergunta quantas balas, em média, cada criança ganhou.
       </p>
 
       <p>
-        O cálculo é imediato: o total distribuído foi de 90 + 9 = 99 balas. Dividindo por 10 crianças, chega-se a
-        <strong>9,9 balas</strong>. A frase “em média, cada convidado ficou com quase 10 balas” é aritmeticamente
-        correta, mas <em>engana completamente</em> quanto ao retrato real. Quem ouvisse apenas esse resumo imaginaria
-        um grupo bem atendido, quando, na prática, nove em cada dez crianças receberam apenas uma unidade.
+        A conta é rápida: foram distribuídas 90 + 9 = 99 balas ao todo. Dividindo por 10 crianças, dá
+        <strong>9,9 balas</strong>. Dizer que “em média, cada criança ficou com quase 10 balas” está matematicamente
+        certo, mas <em>engana bastante</em> sobre o que aconteceu de verdade ali. Quem só escutasse esse número ia achar
+        que todo mundo saiu cheio de doce, sendo que, na prática, nove em cada dez crianças receberam só uma bala.
       </p>
 
       <h3>Duas maneiras de localizar o “centro”</h3>
 
       <p>
-        A estatística dispõe de medidas distintas para identificar o valor “típico” de um conjunto. Embora muitas vezes
-        sejam tratadas como equivalentes, média e mediana respondem a perguntas diferentes.
+        A estatística tem jeitos diferentes de achar qual é o valor “típico” de um grupo. Mesmo que muita gente trate
+        como se fossem a mesma coisa, média e mediana respondem a perguntas bem diferentes.
       </p>
 
       <p>
-        A <strong>média</strong> supõe uma repartição igualitária hipotética: soma-se tudo o que existe no conjunto e
-        divide-se pelo total de integrantes. Na cena das balas, a pergunta respondida é: “se todos recebessem partes
-        idênticas, quanto caberia a cada criança?”.
+        A <strong>média</strong> imagina uma divisão igual para todo mundo: você soma tudo o que existe no grupo e
+        divide pela quantidade de pessoas. No exemplo das balas, a pergunta que ela responde é: “se todo mundo recebesse
+        partes iguais, quantas balas ia dar para cada criança?”.
       </p>
 
       <p>
-        A <strong>mediana</strong> segue outro critério: ordenam-se todos os valores do menor para o maior e
-        identifica-se quem ocupa exatamente o meio da fila. Quando o grupo tem número par de integrantes, calcula-se a
-        média dos dois valores centrais. Na festa das balas, a fila ordenada seria 1, 1, 1, 1, 1, 1, 1, 1, 1 e 90. Os
-        dois valores centrais são iguais a 1, de modo que a mediana é <strong>1 bala</strong>. Enquanto a média aponta
-        9,9, a mediana reflete com precisão a condição da maioria do grupo.
+        Já a <strong>mediana</strong> vai por outro caminho: você coloca todos os valores em ordem, do menor para o
+        maior, e olha quem ficou bem no meio da fila. Quando o grupo tem quantidade par de pessoas, fazemos a média dos
+        dois números centrais. Na festa das balas, a fila em ordem seria: 1, 1, 1, 1, 1, 1, 1, 1, 1 e 90. Os dois
+        valores do meio são 1, então a mediana é <strong>1 bala</strong>. Enquanto a média joga para 9,9, a mediana
+        mostra certinho a situação da maioria do grupo.
       </p>
 
       <aside class="box box--curiosidade">
         <p class="box__selo">Curiosidade</p>
         <h4>O papel da “moda”</h4>
         <p>
-          Há ainda uma terceira medida de tendência central: a <strong>moda</strong>, que designa simplesmente o valor
-          que mais se repete em um conjunto. Na festa das balas, a moda também é 1 bala, pois ocorre nove vezes. No
-          cotidiano, recorre-se à moda sempre que se identifica o padrão mais frequente — como o tamanho de calçado
-          mais vendido em uma loja.
+          Existe ainda uma terceira medida conhecida como <strong>moda</strong>, que é simplesmente o valor que mais se
+          repete numa lista. Na festa das balas, a moda também é 1 bala, porque aparece nove vezes. No dia a dia, a
+          gente usa a lógica da moda sempre que procura o padrão mais comum (como o número de tênis que mais sai numa
+          loja).
         </p>
       </aside>
 
       <h3>A sala dos dez trabalhadores e o visitante atípico</h3>
 
       <p>
-        Transportemos o raciocínio para o rendimento do trabalho. Imagine uma sala com dez trabalhadores cujos salários
-        mensais, já ordenados do menor para o maior, obedecem a valores hipotéticos arredondados para facilitar o
-        cálculo:
+        Vamos trazer esse raciocínio para o salário. Imagine uma sala com dez trabalhadores onde a renda mensal de cada
+        um, já organizada do menor para o maior, usa valores arredondados só para facilitar a conta:
       </p>
 
       <table class="tabela-sala">
@@ -815,35 +804,35 @@
       </table>
 
       <p>
-        A soma das dez rendas alcança R$ 23.000; dividida por 10, resulta em <strong>média de R$ 2.300</strong>. A
-        mediana, obtida entre a 5ª posição (R$ 2.200) e a 6ª posição (R$ 2.400), igualmente equivale a
-        <strong>R$ 2.300</strong>. Em grupos equilibrados e simétricos, média e mediana coincidem.
+        Somando os dez salários dá R$ 23.000; dividido por 10, resulta numa <strong>média de R$ 2.300</strong>. A
+        mediana, tirada entre a 5ª pessoa (R$ 2.200) e a 6ª pessoa (R$ 2.400), também dá <strong>R$ 2.300</strong>. Em
+        grupos mais equilibrados e parecidos entre si, média e mediana acabam batendo.
       </p>
 
       <p>
-        Suponha agora que ingresse nessa sala uma décima primeira pessoa com renda mensal de R$ 1.000.000 (valor
-        adotado para simplificar a conta; grandes fortunas costumam ser medidas em <em>patrimônio acumulado</em>,
-        distinto de renda mensal). Nenhum dos dez trabalhadores recebeu aumento. Ainda assim, a soma passa a
-        R$ 1.023.000, elevando a nova <strong>média para R$ 93.000</strong> — mais de quarenta vezes superior à
-        anterior. Se uma manchete afirmasse que “a renda média na sala é de R$ 93.000”, nenhum dos moradores originais
-        daquele espaço se reconheceria na descrição.
+        Agora imagina que entra nessa sala uma décima primeira pessoa ganhando R$ 1.000.000 por mês (um número escolhido
+        para simplificar o exemplo, já que grandes fortunas costumam ser medidas em <em>patrimônio acumulado</em>, e não
+        em salário mensal). Nenhum dos dez trabalhadores ganhou aumento nenhum. Mesmo assim, a soma sobe para
+        R$ 1.023.000, puxando a nova <strong>média para R$ 93.000</strong> (mais de quarenta vezes maior que a
+        anterior). Se saísse uma notícia dizendo que “a renda média na sala é de R$ 93.000”, nenhum dos moradores
+        originais daquela sala iam se enxergar nesse valor.
       </p>
 
       <p>
-        A mediana reage de maneira muito diversa. Com 11 integrantes, surge uma posição central exata: a 6ª pessoa da
-        fila, cuja renda é <strong>R$ 2.400</strong>. O deslocamento foi de apenas R$ 100. Isso ocorre porque a mediana
-        considera apenas a <em>ordem</em> na fila, e não a magnitude absoluta do extremo: quer o visitante receba um
-        milhão ou um bilhão, ele ocupará a última posição, mantendo o centro praticamente inalterado.
+        Com a mediana é bem diferente. Com 11 pessoas na sala, aparece uma posição exata bem no meio: a 6ª pessoa da
+        fila, que ganha <strong>R$ 2.400</strong>. Mudou só R$ 100. Isso acontece porque a mediana olha apenas para a
+        <em>ordem</em> da fila, e não para o tamanho gigante do número na ponta: tanto faz o visitante ganhar um milhão
+        ou um bilhão, ele continua indo para o último lugar da fila e deixa o meio quase sem mexer.
       </p>
 
       <aside class="box box--conta">
         <p class="box__selo">Conta de cabeça</p>
         <h4>Por que um valor extremo altera tanto a média</h4>
         <p>
-          A nova média segue a relação: (soma anterior + valor do visitante) ÷ (total anterior + 1). Quando o novo
-          elemento é desproporcional ao restante do grupo, passa a dominar a soma: (23.000 + 1.000.000) ÷ 11 = 93.000.
-          Em estatística, dizemos que a mediana é <em>robusta</em> (resistente) a <strong>valores atípicos</strong>
-          (<em>outliers</em>), enquanto a média é sensível a eles.
+          A nova média segue a conta: (soma anterior + valor do visitante) ÷ (quantidade anterior + 1). Quando entra um
+          número muito fora do padrão do resto do grupo, ele passa a mandar na soma: (23.000 + 1.000.000) ÷ 11 = 93.000.
+          Na estatística, dizemos que a mediana é <em>robusta</em> (resistente) a <strong>valores atípicos</strong>
+          (<em>outliers</em>), enquanto a média é sensível demais a eles.
         </p>
       </aside>
 
@@ -853,9 +842,9 @@
           <p class="ferramenta__selo">Mão na massa nº 2</p>
           <h3 id="ferr-sala-titulo">Simule a entrada do visitante na sala</h3>
           <p id="sala-ajuda">
-            Informe quanto o décimo primeiro integrante recebe por mês (ou ajuste o controle deslizante) e selecione
-            “Deixar entrar” para observar o comportamento da média e da mediana. Depois selecione “Pedir para sair”
-            para restaurar o equilíbrio inicial.
+            Digite quanto o décimo primeiro integrante ganha por mês (ou mexa no controle deslizante) e clique em “Deixar
+            entrar” para ver o que acontece com a média e a mediana. Depois clique em “Pedir para sair” para voltar ao
+            começo.
           </p>
         </header>
 
@@ -892,87 +881,86 @@
       <h3>A realidade da renda no Brasil</h3>
 
       <p>
-        Esse comportamento estatístico manifesta-se claramente nas pesquisas nacionais. Anualmente, por meio da PNAD
-        Contínua, o IBGE apura o rendimento dos domicílios brasileiros. Um dos indicadores centrais é o
-        <strong>rendimento domiciliar per capita</strong> — expressão latina para “por cabeça”: soma-se tudo o que os
-        moradores de uma casa recebem no mês (salários, aposentadorias, benefícios) e divide-se o total por
-        <em>todos</em> os residentes, inclusive crianças sem renda própria.
+        Esse mesmo efeito aparece bem claro nas pesquisas do país. Todo ano, pela PNAD Contínua, o IBGE mede quanto as
+        casas brasileiras ganham. Um dos números principais é o <strong>rendimento domiciliar per capita</strong> (que
+        vem do latim para “por cabeça”): soma-se tudo que os moradores da casa recebem no mês, contando salários,
+        aposentadorias e benefícios, e divide-se o total por <em>todo mundo</em> que mora ali, inclusive crianças sem
+        renda própria.
       </p>
 
       <p>
-        Em 2024, esse rendimento médio atingiu <strong>R$ 2.020 mensais por pessoa</strong>, o maior patamar da série
-        iniciada em 2012. Quando se abre essa média por estratos de renda, porém, revela-se a distância entre a base e
-        o topo: a metade mais pobre recebeu em média R$ 713 por mês; os 40% mais pobres ficaram com R$ 601; os 10%
-        mais ricos receberam R$ 8.034; e o 1% no topo alcançou R$ 21.767 mensais por pessoa — 36,2 vezes a média dos
-        40% mais pobres, enquanto a razão entre os 10% do topo e os 40% da base foi de 13,4 vezes.
+        Em 2024, essa renda média chegou a <strong>R$ 2.020 por mês por pessoa</strong>, o maior valor da série desde
+        2012. Mas quando a gente abre essa média por faixas de renda, aparece a distância enorme entre quem ganha menos
+        e quem está no topo: a metade mais pobre recebeu em média R$ 713 por mês; os 40% mais pobres ficaram com
+        R$ 601; os 10% mais ricos receberam R$ 8.034; e o 1% do topo chegou a R$ 21.767 por pessoa (36,2 vezes a média
+        dos 40% mais pobres, enquanto a conta entre os 10% do topo e os 40% da base deu 13,4 vezes).
       </p>
 
       <aside class="box box--conta">
         <p class="box__selo">Conta de cabeça</p>
         <h4>Decompondo a renda média nacional</h4>
         <p>
-          Como a média geral é de R$ 2.020 e a média dos 50% mais pobres é de R$ 713, a metade superior responde pela
-          compensação. Pela relação (2 × 2.020 − 713), a média da metade mais rica situa-se em torno de R$ 3.327. Mesmo
-          sujeita a arredondamentos dos dados divulgados, essa aproximação evidencia que a média de R$ 2.020 não
-          descreve bem nenhuma das duas metades do país.
+          Como a média geral é R$ 2.020 e a média dos 50% mais pobres é R$ 713, a outra metade acaba puxando a conta.
+          Fazendo (2 × 2.020 − 713), a média da metade mais rica fica perto de R$ 3.327. Mesmo tendo arredondamentos dos
+          dados divulgados, essa conta rápida já mostra que a média de R$ 2.020 não descreve direito nenhuma das duas
+          metades do país.
         </p>
       </aside>
 
       <blockquote class="citacao">
-        A média responde quanto caberia a cada pessoa em uma divisão perfeitamente igualitária. A mediana responde
-        como vive quem está no centro da fila social. São perguntas distintas — e ambas merecem ser feitas.
+        A média responde quanto caberia a cada pessoa numa divisão perfeitamente igual. A mediana responde como vive quem
+        está no meio da fila social. São perguntas diferentes, e as duas precisam ser feitas.
       </blockquote>
 
       <p>
-        Uma ressalva de rigor metodológico: os valores citados acima comparam médias calculadas dentro de cada extrato
-        de renda. A mediana nacional exata também pode ser obtida diretamente a partir dos microdados públicos da PNAD
-        Contínua disponibilizados pelo IBGE sem identificação individual — um ótimo exercício de análise empírica para
-        estudantes interessados em iniciação científica.
+        Um cuidado importante de método: esses valores aí em cima comparam médias dentro de cada faixa de renda. A
+        mediana exata do país também pode ser calculada direto nos microdados públicos da PNAD Contínua que o IBGE
+        disponibiliza sem identificar ninguém, o que inclusive dá um ótimo exercício para quem se interessa por pesquisa
+        e iniciação científica.
       </p>
 
       <aside class="box box--curiosidade">
         <p class="box__selo">Curiosidade</p>
         <h4>Atualizações recentes e cuidados de comparação</h4>
         <p>
-          Em maio de 2026, o IBGE divulgou os dados referentes a 2025. Conforme o noticiário econômico baseado no
-          levantamento, a renda per capita dos 10% mais pobres foi de R$ 268 mensais; a dos 10% mais ricos chegou a
-          R$ 9.117; e a do 1% no topo alcançou R$ 24.973. A razão entre os 10% mais ricos e os 40% mais pobres passou
-          a 13,8 vezes. Atenção a um cuidado metodológico: não se deve comparar diretamente os R$ 601 de 2024
-          (referentes aos 40% mais pobres) com os R$ 268 de 2025 (que isolam apenas os 10% mais pobres), pois são
-          faixas distintas. Além disso, o IBGE recalcula séries anteriores sempre que incorpora novas bases censitárias,
-          razão pela qual ano e edição da pesquisa devem acompanhar qualquer citação.
+          Em maio de 2026, o IBGE soltou os dados de 2025. Pelo noticiário econômico baseado na pesquisa, a renda per
+          capita dos 10% mais pobres foi de R$ 268 por mês; a dos 10% mais ricos foi a R$ 9.117; e a do 1% do topo
+          chegou a R$ 24.973. A distância entre os 10% mais ricos e os 40% mais pobres subiu para 13,8 vezes. Só vale
+          um alerta: não dá para comparar direto os R$ 601 de 2024 (que são dos 40% mais pobres) com os R$ 268 de 2025
+          (que pegam só os 10% mais pobres), porque são grupos diferentes. Além disso, o IBGE recalcula séries antigas
+          quando incorpora censos novos, então vale sempre anotar o ano e a edição da pesquisa.
         </p>
       </aside>
 
-      <h3>Quando empregar a média e quando preferir a mediana</h3>
+      <h3>Quando usar a média e quando preferir a mediana</h3>
 
-      <p>Nenhuma das duas medidas é superior em termos absolutos; cada uma atende melhor a determinados conjuntos de dados:</p>
+      <p>Nenhuma das duas é melhor em tudo; cada uma funciona melhor dependendo do conjunto de números:</p>
       <ul class="lista-simples">
         <li>
-          <strong>A média é adequada</strong> quando os valores são relativamente próximos e distribuídos de maneira
-          equilibrada, como a estatura dos alunos de uma turma ou as notas de uma prova sem discrepâncias extremas.
+          <strong>A média funciona bem</strong> quando os valores são parecidos e não tem ninguém muito fora da curva,
+          como a altura dos alunos de uma turma ou as notas de uma prova sem notas absurdas nas pontas.
         </li>
         <li>
-          <strong>A mediana é preferível</strong> na presença de valores muito afastados da maioria — caso típico de
-          salários, patrimônios, preços de imóveis ou tempos de espera em serviços de saúde.
+          <strong>A mediana é melhor</strong> quando existem valores muito distantes da maioria, que é justamente o que
+          acontece com salários, patrimônios, preços de casas ou tempo de espera em fila de hospital.
         </li>
         <li>
-          <strong>A leitura conjunta oferece o melhor retrato.</strong> Quando a média supera amplamente a mediana, há
-          indício claro de poucos valores muito altos puxando o cálculo para cima — um sinal característico de
+          <strong>Olhar as duas juntas dá o retrato mais honesto.</strong> Quando a média é muito maior que a mediana, já
+          dá para desconfiar que poucos valores bem altos estão puxando a conta para cima, o que é sinal clássico de
           desigualdade.
         </li>
       </ul>
 
       <p>
-        Ao ler que “a renda média da cidade aumentou”, a verificação imediata consiste em perguntar qual foi a evolução
-        da mediana e dos estratos de menor rendimento no mesmo período.
+        Sempre que você ler que “a renda média da cidade aumentou”, a pergunta imediata é saber como andou a mediana e o
+        pessoal das faixas menores no mesmo período.
       </p>
 
       <aside class="box box--resumo" aria-labelledby="resumo2-titulo">
         <p class="box__selo">Para guardar</p>
         <h4 id="resumo2-titulo">Em uma frase</h4>
-        <p>A média reparte o total igualmente e sofre forte influência de extremos; a mediana aponta o centro da fila ordenada e retrata melhor o caso típico em distribuições desiguais.</p>
-        <p class="desafio"><strong>Exercício sugerido:</strong> relacione sete preços cotidianos de refeições e acrescente um oitavo item de R$ 300. Calcule média e mediana antes e depois dessa inclusão para comparar o impacto em cada medida.</p>
+        <p>A média divide tudo por igual e sente muito o peso de extremos; a mediana mostra o meio da fila ordenada e retrata melhor a maioria quando há desigualdade.</p>
+        <p class="desafio"><strong>Exercício sugerido:</strong> anote sete preços comuns de almoço e acrescente um oitavo prato de R$ 300. Calcule média e mediana antes e depois para ver o estrago em cada uma.</p>
       </aside>
     </article>
 
@@ -983,79 +971,78 @@
       <p class="genero-etiqueta">Reportagem · Geografia e Indicadores sociais · <span class="tempo-leitura">leitura de cerca de 9 min</span></p>
       <h2 id="rep3-titulo">Um bolo, três notas</h2>
       <p class="linha-fina">
-        Frequentes no debate econômico e geográfico, o Índice de Gini e o IDH costumam parecer fórmulas distantes.
-        Traduzidos pela analogia de um bolo repartido e de um boletim em três matérias, revelam tanto o que conseguem
-        sintetizar quanto os contrastes que deixam ocultos.
+        Muito falados na economia e na geografia, o Índice de Gini e o IDH costumam parecer fórmulas distantes. Olhando
+        eles como um bolo dividido e um boletim com três matérias, fica bem mais fácil entender o que mostram e o que
+        deixam escondido.
       </p>
-      <p class="assinatura">Texto: <span class="preencher">[PREENCHER: autores]</span> <strong>temos que decidir isso</strong> </p>
+      <p class="assinatura">Texto: <span class="preencher">rever quem vai assinar aqui</span></p>
 
       <aside class="box box--objetivos" aria-labelledby="obj3-titulo">
         <p class="box__selo">Nesta reportagem você vai aprender</p>
         <h4 id="obj3-titulo" class="so-leitor">Objetivos de leitura</h4>
         <ul>
-          <li>o que o Índice de Gini mede e quais aspectos escapam ao indicador;</li>
-          <li>como o IDH reúne saúde, educação e renda em uma nota única;</li>
-          <li>por que a média geométrica penaliza desequilíbrios entre essas dimensões;</li>
-          <li>como o IDH municipal revela contrastes regionais dentro do Brasil.</li>
+          <li>o que o Índice de Gini mede e o que fica de fora dessa conta;</li>
+          <li>como o IDH junta saúde, educação e renda numa nota só;</li>
+          <li>por que a média geométrica pesa mais quando uma área vai muito mal;</li>
+          <li>como o IDH dos municípios mostra diferenças grandes dentro do Brasil.</li>
         </ul>
       </aside>
 
       <h3>O Índice de Gini representado por um bolo</h3>
 
       <p>
-        Considere uma comemoração com dez crianças e um bolo cortado em dez fatias idênticas. Como cada participante
-        recebe exatamente a mesma porção, a partilha é perfeitamente igualitária. Na escala estatística, esse cenário
-        corresponde a um <strong>Índice de Gini igual a 0</strong>.
+        Imagine uma comemoração com dez crianças e um bolo cortado em dez fatias iguais. Como todo mundo recebeu a
+        mesma porção, a divisão é perfeitamente igual. Na escala desse índice, essa situação dá um
+        <strong>Índice de Gini igual a 0</strong>.
       </p>
 
       <p>
-        Agora considere o extremo oposto: uma única criança fica com o bolo inteiro, deixando as outras nove sem nada.
-        Nesse grupo de dez pessoas, o Gini vale exatamente 0,9; quanto maior o número de participantes na distribuição,
-        mais o indicador aproxima-se do limite de <strong>1</strong>. O Índice de Gini funciona, assim, como uma escala
-        de 0 a 1 (por vezes expressa de 0 a 100): quanto mais próximo de zero, mais igualitária a divisão da renda;
-        quanto mais próximo de um, maior a concentração em poucas mãos.
+        Agora pense no outro extremo: uma criança só pega o bolo inteiro e deixa as outras nove sem nada. Nesse grupo de
+        dez pessoas, o Gini dá exatamente 0,9; e quanto mais pessoas entrarem nessa conta, mais o número vai chegando
+        perto de <strong>1</strong>. O Índice de Gini funciona assim, numa escala de 0 a 1 (às vezes mostram de 0 a
+        100): quanto mais perto de zero, mais parecida é a divisão da renda; quanto mais perto de um, mais concentrado na
+        mão de poucos.
       </p>
 
       <p>
-        Proposto pelo estatístico italiano Corrado Gini em 1912, o índice permite acompanhar a evolução da desigualdade
-        no país. Na PNAD Contínua (rendimento domiciliar per capita), o Gini brasileiro recuou de <strong>0,544 em
-        2019</strong> para <strong>0,518 em 2023</strong> e alcançou <strong>0,506 em 2024</strong> — o menor nível
-        desde o início da série em 2012. Embora a queda indique redução recente da desigualdade, um índice na casa de
-        0,50 mantém o Brasil em patamar elevado na comparação internacional.
+        Criado pelo estatístico italiano Corrado Gini em 1912, esse índice ajuda a acompanhar se a desigualdade no país
+        está subindo ou caindo. Na PNAD Contínua (olhando a renda por pessoa nas casas), o Gini do Brasil caiu de
+        <strong>0,544 em 2019</strong> para <strong>0,518 em 2023</strong> e chegou a <strong>0,506 em 2024</strong>, o
+        menor ponto desde que essa série começou em 2012. Mesmo que a queda mostre uma melhora recente, ficar na casa
+        de 0,50 ainda deixa o Brasil num nível alto quando comparado a outros países.
       </p>
 
       <aside class="box box--curiosidade">
         <p class="box__selo">Curiosidade</p>
-        <h4>Por que o mesmo ano pode apresentar valores ligeiramente distintos</h4>
+        <h4>Por que o mesmo ano pode aparecer com valores um pouco diferentes</h4>
         <p>
-          Sempre que o IBGE incorpora atualizações demográficas — como as ponderações derivadas do Censo 2022 —, as
-          séries históricas podem passar por revisão técnica. Por essa razão, publicações distintas citam 0,506
-          (primeira divulgação) ou 0,504 para o Gini de 2024, enquanto notícias sobre a edição de 2025 apontaram 0,511.
-          Trata-se de atualização metodológica contínua, reforçando a importância de registrar sempre a edição da
-          pesquisa consultada.
+          Toda vez que o IBGE atualiza a base populacional, como aconteceu com os dados do Censo 2022, as séries
+          anteriores podem passar por revisão. Por isso você pode achar citações com 0,506 (primeira divulgação) ou
+          0,504 para o Gini de 2024, enquanto reportagens sobre a edição de 2025 apontaram 0,511. É um ajuste normal de
+          método, o que só reforça a importância de sempre anotar qual edição da pesquisa foi consultada.
         </p>
       </aside>
 
       <h3>O que o Índice de Gini não mostra</h3>
 
       <p>
-        Todo indicador sintético resume um aspecto da realidade ao preço de omitir outros. O Gini descreve apenas como
-        o bolo é <em>repartido</em>, sem informar o <em>tamanho</em> desse bolo: duas sociedades com o mesmo índice
-        podem ter níveis de riqueza muito distintos. Além disso, o Gini agregado não aponta <em>onde</em> a
-        desigualdade concentra-se — entre regiões, entre campo e cidade ou entre estratos específicos. Para captar
-        essas distâncias, os pesquisadores recorrem a medidas complementares, como comparar a renda dos 10% mais ricos
-        à dos 40% mais pobres (a chamada razão de Palma, equivalente a 13,4 vezes no Brasil de 2024).
+        Todo número resumo mostra um lado da história e acaba escondendo outros. O Gini conta só como o bolo foi
+        <em>repartido</em>, sem dizer o <em>tamanho</em> desse bolo: dois países com o mesmo índice podem ter níveis de
+        riqueza bem diferentes. Além disso, o Gini nacional não mostra <em>onde</em> a desigualdade se concentra (se é
+        entre regiões, entre campo e cidade ou dentro de grupos específicos). Para enxergar essas distâncias, os
+        pesquisadores usam outras contas junto, como comparar a renda dos 10% mais ricos com a dos 40% mais pobres (a
+        chamada razão de Palma, que deu 13,4 vezes no Brasil em 2024).
       </p>
 
       <aside class="box box--conta">
         <p class="box__selo">Conta de cabeça</p>
         <h4>A geometria por trás do Gini</h4>
         <p>
-          Se ordenarmos a população da menor à maior renda e formos acumulando a fatia recebida por cada pessoa, uma
-          divisão perfeitamente igualitária formaria uma linha reta diagonal. Na realidade, o traçado sempre curva-se
-          abaixo da diagonal, desenhando a chamada <strong>curva de Lorenz</strong>. O Gini corresponde à área situada
-          entre a diagonal e a curva (área A) dividida pela área total abaixo da diagonal (A + B): <strong>Gini = A ÷
-          (A + B)</strong>. Quanto maior o afastamento da curva em relação à reta, maior a desigualdade.
+          Se a gente colocar a população em ordem da menor para a maior renda e for somando a fatia de cada pessoa, uma
+          divisão totalmente igual daria uma linha reta diagonal no gráfico. Na vida real, o desenho sempre faz uma
+          barriga para baixo da diagonal, chamada de <strong>curva de Lorenz</strong>. O Gini é justamente a área que
+          fica entre a reta e a curva (área A) dividida pela área total abaixo da reta (A + B): <strong>Gini = A ÷ (A +
+          B)</strong>. Quanto mais distante a curva ficar da reta, maior é a desigualdade.
         </p>
       </aside>
 
@@ -1065,8 +1052,8 @@
           <p class="ferramenta__selo">Mão na massa nº 3</p>
           <h3 id="ferr-bolo-titulo">A partilha do bolo conforme o Gini</h3>
           <p id="gini-ajuda">
-            Selecione um valor de Gini no controle deslizante ou nos cenários predefinidos para observar como o bolo
-            seria dividido entre dez pessoas, da menor fatia (à esquerda) à maior (à direita).
+            Escolha um valor de Gini no controle deslizante ou nos botões prontos para ver como o bolo ficaria dividido
+            entre dez pessoas, da menor fatia (na esquerda) até a maior (na direita).
           </p>
         </header>
 
@@ -1094,49 +1081,48 @@
       <h3>O IDH como um boletim de três matérias</h3>
 
       <p>
-        Enquanto o Gini mede a desigualdade na partilha, o <strong>IDH</strong> (Índice de Desenvolvimento Humano)
-        busca avaliar se a população desfruta de condições concretas de longevidade, instrução e padrão de vida.
-        Lançado em 1990 pelo Programa das Nações Unidas para o Desenvolvimento (PNUD), a partir das contribuições dos
-        economistas Mahbub ul Haq e Amartya Sen, o indicador partiu de uma tese central: o progresso de um país não
-        pode ser medido apenas pelo volume de dinheiro que produz.
+        Enquanto o Gini olha para a desigualdade na divisão da renda, o <strong>IDH</strong> (Índice de Desenvolvimento
+        Humano) tenta medir se as pessoas têm boas condições de vida em saúde, educação e renda. Criado em 1990 pelo
+        Programa das Nações Unidas para o Desenvolvimento (PNUD), com base nas ideias dos economistas Mahbub ul Haq e
+        Amartya Sen, o índice partiu de uma crítica simples: o avanço de um país não dá para ser medido só pelo quanto
+        de dinheiro ele produz.
       </p>
 
       <p>
-        Sua estrutura assemelha-se a um boletim escolar composto por <strong>três dimensões</strong>:
+        A conta lembra bastante um boletim escolar com <strong>três matérias</strong>:
       </p>
       <ul class="lista-simples">
         <li><strong>Saúde:</strong> medida pela esperança de vida ao nascer.</li>
-        <li><strong>Educação:</strong> estimada pela média de anos de estudo dos adultos e pelos anos de escolaridade esperados para as crianças.</li>
-        <li><strong>Renda:</strong> medida pelo rendimento nacional bruto per capita, ajustado ao poder de compra.</li>
+        <li><strong>Educação:</strong> calculada pela média de anos que os adultos estudaram e pelos anos de escola esperados para as crianças.</li>
+        <li><strong>Renda:</strong> medida pelo rendimento nacional bruto por pessoa, ajustado ao poder de compra.</li>
       </ul>
 
       <p>
-        Cada dimensão converte-se em uma nota de 0 a 1, posteriormente combinada no índice final. Pelas faixas do PNUD,
-        valores abaixo de 0,550 indicam desenvolvimento humano “baixo”; de 0,550 a 0,699, “médio”; de 0,700 a 0,799,
-        “alto”; e a partir de 0,800, “muito alto”. No relatório de 2025 (com dados referentes a 2023), o Brasil registrou
-        <strong>IDH de 0,786</strong>, ocupando a <strong>84ª posição entre 193 países</strong>, dentro da faixa de
-        desenvolvimento humano alto (em 2022 havia marcado 0,780, na 89ª colocação).
+        Cada uma das três vira uma nota de 0 a 1, e depois juntam tudo no índice final. Pela tabela do PNUD, notas
+        abaixo de 0,550 são desenvolvimento humano “baixo”; de 0,550 a 0,699, “médio”; de 0,700 a 0,799, “alto”; e de
+        0,800 para cima, “muito alto”. No relatório de 2025 (com dados de 2023), o Brasil ficou com <strong>IDH de
+        0,786</strong>, no <strong>84º lugar entre 193 países</strong>, dentro da faixa de desenvolvimento alto (em 2022
+        tinha ficado com 0,780, na 89ª posição).
       </p>
 
       <aside class="box box--conta">
         <p class="box__selo">Conta de cabeça</p>
         <h4>Como se calcula a nota da dimensão “saúde”</h4>
         <p>
-          O PNUD fixa duas balizas de referência: 20 anos de esperança de vida correspondem à nota 0, e 85 anos
-          equivalem à nota 1. No relatório de 2025, a estimativa demográfica das Nações Unidas para o Brasil foi de
-          75,85 anos (número distinto dos 76,4 anos divulgados pelo IBGE em razão dos modelos próprios de cada
-          instituição). Aplicando a proporção: (75,85 − 20) ÷ (85 − 20) = 55,85 ÷ 65 ≈ <strong>0,86</strong>, que
-          constitui a nota brasileira em saúde naquele relatório.
+          O PNUD define dois limites fixos: 20 anos de esperança de vida vale nota 0, e 85 anos vale nota 1. No relatório
+          de 2025, a estimativa da ONU para o Brasil foi de 75,85 anos (um número diferente dos 76,4 anos do IBGE
+          porque cada instituição usa seu próprio modelo). Fazendo a regra de proporção: (75,85 − 20) ÷ (85 − 20) =
+          55,85 ÷ 65 ≈ <strong>0,86</strong>, que é a nota brasileira em saúde naquele relatório.
         </p>
       </aside>
 
       <p>
-        Há uma escolha matemática crucial na fórmula adotada desde 2010: em vez da média aritmética simples, o IDH
-        utiliza a <strong>média geométrica</strong>, calculada pela raiz cúbica do produto das três notas — IDH =
-        ∛(saúde × educação × renda). O objetivo é penalizar desequilíbrios severos entre áreas. Um país com notas 0,9
-        em saúde, 0,9 em educação e 0,3 em renda teria média aritmética de 0,70 (faixa “alta”), mas média geométrica
-        próxima de 0,62 (faixa “média”). Uma fragilidade aguda em uma dimensão reduz fortemente o índice final,
-        impedindo que o bom desempenho em renda compense deficiências em saúde ou educação.
+        Tem uma escolha matemática bem importante na fórmula desde 2010: em vez de fazer a média aritmética comum, o IDH
+        usa a <strong>média geométrica</strong>, que é a raiz cúbica da multiplicação das três notas: IDH = ∛(saúde ×
+        educação × renda). A ideia é punir desequilíbrios fortes entre as áreas. Um país com 0,9 em saúde, 0,9 em
+        educação e 0,3 em renda teria média comum de 0,70 (faixa “alta”), mas pela média geométrica cai para perto de
+        0,62 (faixa “média”). Uma nota muito ruim em uma área puxa o resultado todo para baixo, evitando que muito
+        dinheiro esconda problemas sérios de saúde ou educação.
       </p>
 
       <!-- =================== FERRAMENTA MÃO NA MASSA 4 =================== -->
@@ -1145,8 +1131,7 @@
           <p class="ferramenta__selo">Mão na massa nº 4</p>
           <h3 id="ferr-idh-titulo">Calculadora comparativa do IDH</h3>
           <p id="idh-ajuda">
-            Ajuste as três notas (de 0 a 1) para observar o IDH resultante pela média geométrica e compará-lo à média
-            aritmética comum.
+            Mexa nas três notas (de 0 a 1) para ver quanto dá o IDH pela média geométrica e comparar com a média comum.
           </p>
         </header>
 
@@ -1186,40 +1171,39 @@
       <h3>Da escala nacional ao município: o IDHM</h3>
 
       <p>
-        O IDH nacional sintetiza o país inteiro em uma única média — e médias encobrem disparidades territoriais.
-        Para investigar essas diferenças em escala local, o PNUD, o Ipea e a Fundação João Pinheiro criaram o Atlas
-        do Desenvolvimento Humano no Brasil, calculando o <strong>IDHM</strong> (Índice de Desenvolvimento Humano
-        Municipal) para os mais de 5.500 municípios brasileiros. Na série baseada nos censos até 2010, o IDHM médio
-        do país havia avançado de 0,493, em 1991, para 0,727.
+        O IDH do país inteiro junta tudo numa única nota, e médias grandes acabam escondendo diferenças de região para
+        região. Para enxergar isso mais de perto, o PNUD, o Ipea e a Fundação João Pinheiro montaram o Atlas do
+        Desenvolvimento Humano no Brasil, calculando o <strong>IDHM</strong> (Índice de Desenvolvimento Humano
+        Municipal) para os mais de 5.500 municípios brasileiros. Na série feita com os censos até 2010, o IDHM médio do
+        Brasil tinha subido de 0,493, em 1991, para 0,727.
       </p>
 
       <p>
-        Dentro das fronteiras nacionais, contudo, a amplitude era expressiva. São Caetano do Sul (SP), na região do
-        ABC paulista, liderava com <strong>0,862</strong>, enquanto Melgaço (PA), no arquipélago do Marajó,
-        registrava <strong>0,418</strong>. A distância de 0,444 ponto mostra como o território brasileiro reunia, no
-        mesmo levantamento, realidades compatíveis com níveis muito alto e baixo de desenvolvimento humano — reforçando
-        o papel da Geografia em localizar onde os indicadores médios mascaram desigualdades. (Esses dados municipais
-        referem-se à série do Censo 2010; convém consultar as atualizações do Atlas referentes ao Censo 2022.)
+        Só que olhando para dentro do país, a distância entre as cidades era gigante. São Caetano do Sul (SP), no ABC
+        paulista, liderava com <strong>0,862</strong>, enquanto Melgaço (PA), lá no arquipélago do Marajó, marcava
+        <strong>0,418</strong>. Essa diferença de 0,444 ponto mostra como o mesmo Brasil tinha, na mesma pesquisa,
+        lugares com nível muito alto e lugares com nível baixo de desenvolvimento, o que mostra bem o papel da Geografia
+        de localizar onde os números médios escondem desigualdades. (Esses dados de municípios são da série do Censo
+        2010; vale sempre conferir as atualizações do Atlas para o Censo 2022.)
       </p>
 
       <aside class="box box--curiosidade">
         <p class="box__selo">Curiosidade</p>
         <h4>Quando o IDH incorpora a desigualdade</h4>
         <p>
-          O PNUD calcula ainda o <strong>IDH ajustado à desigualdade</strong>, que desconta do índice original a perda
-          decorrente da distribuição desigual de saúde, educação e renda dentro de cada país. Conforme divulgação da
-          Agência Brasil sobre o relatório de 2025, o índice ajustado do Brasil cai para <strong>0,594</strong>,
-          deslocando o país para a 105ª posição e para a faixa “média”. Gini e IDH atuam, assim, como lentes
-          complementares: uma mede a desigualdade da partilha; a outra avalia a extensão da longevidade, da educação
-          e da renda.
+          O PNUD calcula também o <strong>IDH ajustado à desigualdade</strong>, que desconta da nota original o que se
+          perde quando saúde, educação e renda ficam mal distribuídas dentro do país. Segundo divulgação da Agência Brasil
+          sobre o relatório de 2025, o índice ajustado do Brasil cai para <strong>0,594</strong>, jogando o país para a
+          105ª posição e para a faixa “média”. Gini e IDH funcionam assim, um completando o outro: um mede a desigualdade
+          na divisão, o outro mede até onde vão longevidade, educação e renda.
         </p>
       </aside>
 
       <aside class="box box--resumo" aria-labelledby="resumo3-titulo">
         <p class="box__selo">Para guardar</p>
         <h4 id="resumo3-titulo">Em uma frase</h4>
-        <p>O Índice de Gini mede a desigualdade na repartição da renda; o IDH avalia longevidade, educação e renda pela média geométrica, penalizando desequilíbrios entre essas dimensões.</p>
-        <p class="desafio"><strong>Exercício sugerido:</strong> na calculadora de IDH, simule três cenários: um equilibrado, um com educação muito baixa e outro com renda muito baixa, observando em qual deles há maior queda frente à média comum.</p>
+        <p>O Índice de Gini mede a desigualdade na repartição da renda; o IDH avalia saúde, educação e renda pela média geométrica, penalizando desequilíbrios entre essas dimensões.</p>
+        <p class="desafio"><strong>Exercício sugerido:</strong> na calculadora de IDH, teste três cenários: um equilibrado, um com educação bem baixa e outro com renda bem baixa, vendo em qual deles a nota cai mais em relação à média comum.</p>
       </aside>
     </article>
 
@@ -1230,74 +1214,73 @@
       <p class="genero-etiqueta">Reportagem · Estatística e Mídia · <span class="tempo-leitura">leitura de cerca de 10 min</span></p>
       <h2 id="rep4-titulo">Gráficos que mentem dizendo a verdade</h2>
       <p class="linha-fina">
-        Uma visualização pode ser construída exclusivamente com números corretos e, ainda assim, deixar uma impressão
-        falsa. Conheça os seis mecanismos visuais mais recorrentes em notícias e redes sociais e aprenda a identificá-los.
+        Um gráfico pode ser montado só com números corretos e, mesmo assim, deixar uma impressão totalmente errada.
+        Conheça os seis truques visuais mais comuns em notícias e redes sociais e aprenda a perceber cada um.
       </p>
-      <p class="assinatura">Texto: <span class="preencher">[PREENCHER: autores]</span> <strong>temos que decidir isso</strong> </p>
+      <p class="assinatura">Texto: <span class="preencher">rever quem vai assinar aqui</span></p>
 
       <aside class="box box--objetivos" aria-labelledby="obj4-titulo">
         <p class="box__selo">Nesta reportagem você vai aprender</p>
         <h4 id="obj4-titulo" class="so-leitor">Objetivos de leitura</h4>
         <ul>
-          <li>seis recursos visuais que induzem ao erro usando números verdadeiros;</li>
-          <li>como mensurar distorções por meio do “fator de mentira”;</li>
-          <li>por que mapas, porcentagens e recortes temporais exigem atenção crítica;</li>
-          <li>uma lista prática de sinais de alerta para consulta cotidiana.</li>
+          <li>seis recursos visuais que enganam usando números verdadeiros;</li>
+          <li>como medir exageros no desenho pelo “fator de mentira”;</li>
+          <li>por que mapas, porcentagens e recortes de tempo pedem atenção redobrada;</li>
+          <li>uma lista rápida de sinais de alerta para usar no dia a dia.</li>
         </ul>
       </aside>
 
-      <h3>A percepção visual antecede a leitura numérica</h3>
+      <h3>A percepção visual vem antes da leitura dos números</h3>
 
       <p>
-        Diante de um gráfico, o cérebro processa imagem e texto em velocidades distintas. Em frações de segundo, o
-        olhar capta a <em>forma</em> global — uma coluna desproporcional ou uma curva íngreme —, e somente depois a
-        razão examina os algarismos impressos nos eixos. Quando há desalinhamento entre desenho e dado, a primeira
-        impressão tende a prevalecer na memória do leitor.
+        Quando a gente olha para um gráfico, o cérebro lê imagem e número em velocidades diferentes. Em menos de um
+        segundo, o olho já captou a <em>forma</em> geral (uma barra muito maior que a outra ou uma linha subindo rápido),
+        e só depois que a gente vai ler os números pequenos nos eixos. Quando o desenho não bate direito com o dado, a
+        primeira impressão costuma ficar gravada na cabeça de quem viu.
       </p>
 
       <p>
-        Em 1954, o jornalista norte-americano Darrell Huff sintetizou esse mecanismo no clássico <em>Como mentir com
-        estatística</em>, ilustrado por Irving Geis. A lição permanece atual: <strong>números verdadeiros associados
-        a uma representação visual distorcida geram uma mensagem enganosa que resiste à conferência rápida dos
-        valores</strong>.
+        Lá em 1954, o jornalista americano Darrell Huff resumiu esse problema no clássico <em>Como mentir com
+        estatística</em>, com ilustrações de Irving Geis. A lição continua atual: <strong>números verdadeiros ligados a
+        um desenho distorcido criam uma mensagem enganosa que resiste até quando os valores estão ali escritos</strong>.
       </p>
 
       <aside class="box box--dica">
         <p class="box__selo">Antes de começar</p>
-        <h4>Distorção nem sempre resulta de má-fé</h4>
+        <h4>Nem sempre é de propósito</h4>
         <p>
-          Muitos gráficos confusos nascem de pressa editorial, falta de treinamento ou escalas automáticas geradas por
-          planilhas. Os exemplos abaixo foram montados com finalidade estritamente didática ou a partir de dados
-          oficiais públicos, sem visar nenhum veículo específico.
+          Muitos gráficos confusos saem por pressa de fechamento, falta de prática ou porque a própria planilha ajusta a
+          escala no automático. Os exemplos aqui embaixo foram feitos só para explicar o mecanismo ou usando dados
+          públicos oficiais, sem mirar nenhum jornal ou perfil específico.
         </p>
       </aside>
 
       <h3>Truque 1: a régua com origem cortada</h3>
 
       <p>
-        Em gráficos de barras, o eixo vertical funciona como régua: o comprimento de cada barra traduz o valor
-        representado. Por essa razão, a escala deve iniciar no zero, garantindo que uma coluna com o dobro da altura
-        corresponda efetivamente ao dobro da grandeza. Quando o eixo é truncado e começa próximo aos próprios valores
-        medidos, diferenças pequenas assumem aparência dramática.
+        Em gráficos de barras, o eixo vertical funciona como uma régua: o tamanho de cada barra representa o valor que
+        está ali. Por isso, a escala precisa começar no zero, garantindo que uma barra com o dobro da altura seja mesmo
+        o dobro do número. Quando cortam o eixo e fazem ele começar perto dos valores medidos, diferenças bem pequenas
+        ganham cara de mudança gigante.
       </p>
 
       <p>
-        Testemos o recurso com um dado real: o Índice de Gini do Brasil passou de <strong>0,518 em 2023</strong> para
-        <strong>0,506 em 2024</strong> — uma redução modesta de 0,012 ponto, ou cerca de 2,3%. Com o eixo iniciando em
-        zero, as duas colunas exibem praticamente a mesma altura. Se a régua começar em 0,50, contudo, a coluna de
-        2023 passa a medir 0,018 (0,518 − 0,50) e a de 2024 encolhe para 0,006 (0,506 − 0,50), ficando com
-        <strong>um terço</strong> do tamanho da anterior. O olhar conclui que a desigualdade despencou 67%, embora os
-        números impressos estejam corretos.
+        Vamos testar isso com um dado real: o Índice de Gini do Brasil passou de <strong>0,518 em 2023</strong> para
+        <strong>0,506 em 2024</strong>, uma queda pequena de 0,012 ponto (cerca de 2,3%). Com a régua começando no zero,
+        as duas colunas ficam quase da mesma altura. Só que se o eixo começar em 0,50, a barra de 2023 passa a medir
+        0,018 (0,518 − 0,50) e a de 2024 encolhe para 0,006 (0,506 − 0,50), ficando com <strong>um terço</strong> da
+        altura da primeira. Quem olha rápido acha que a desigualdade despencou 67%, mesmo todos os números escritos
+        estando certos.
       </p>
 
       <aside class="box box--conta">
         <p class="box__selo">Conta de cabeça</p>
         <h4>O “fator de mentira” de Tufte</h4>
         <p>
-          O estatístico Edward Tufte propôs uma métrica simples de auditoria visual chamada <strong>fator de
-          mentira</strong> (<em>lie factor</em>): divide-se a variação aparente no desenho pela variação real nos
-          dados. Um gráfico fiel apresenta fator igual a 1. No exemplo acima, o desenho sugere queda de cerca de 67%
-          diante de uma redução real de 2,3%: a razão aproxima-se de <strong>29</strong>, exagerando o fenômeno em
+          O estatístico Edward Tufte criou uma conta simples para testar gráficos chamada <strong>fator de mentira</strong>
+          (<em>lie factor</em>): você divide a variação que aparece no desenho pela variação real dos dados. Um gráfico
+          honesto dá fator igual a 1. No exemplo de cima, o desenho passa a ideia de queda de uns 67% para uma redução
+          real de 2,3%: dividindo um pelo outro, chega perto de <strong>29</strong>, exagerando o tamanho da queda em
           quase trinta vezes.
         </p>
       </aside>
@@ -1308,9 +1291,9 @@
           <p class="ferramenta__selo">Mão na massa nº 5</p>
           <h3 id="ferr-eixo-titulo">A régua cortada</h3>
           <p id="eixo-ajuda">
-            Os gráficos abaixo utilizam exatamente os mesmos dados reais: o Gini do Brasil em 2023 (0,518) e em 2024
-            (0,506). Selecione “Alternar” ou ajuste o ponto de partida do eixo vertical para observar como a manchete e
-            o fator de mentira modificam-se.
+            Os gráficos abaixo usam exatamente os mesmos dados reais: o Gini do Brasil em 2023 (0,518) e em 2024
+            (0,506). Clique em “Alternar” ou mexa no ponto onde o eixo começa para ver como a manchete e o fator de
+            mentira mudam.
           </p>
         </header>
 
@@ -1341,20 +1324,20 @@
       </section>
 
       <p>
-        Uma ressalva técnica necessária: cortar o eixo não é sempre inadequado. Em gráficos de <em>linha</em> que
-        acompanham variações contínuas ao longo do tempo — como a temperatura diária de uma cidade —, é aceitável
-        recortar a escala vertical desde que o corte esteja claramente sinalizado. Em gráficos de <em>barras</em>,
-        porém, nos quais o próprio comprimento codifica a grandeza absoluta, a origem deve permanecer no zero.
+        Um detalhe técnico importante: cortar o eixo nem sempre está errado. Em gráficos de <em>linha</em> que mostram
+        mudanças contínuas no tempo, como a temperatura de uma cidade ao longo do dia, dá para cortar a escala vertical
+        desde que fique bem avisado onde começou. Já em gráficos de <em>barras</em>, onde o próprio comprimento da barra
+        representa o tamanho do número, a base tem que começar no zero.
       </p>
 
       <h3>Truque 2: figuras que crescem em duas dimensões</h3>
 
       <p>
-        Muitos infográficos substituem barras por ícones ilustrativos — silhuetas humanas, moedas, residências. O
-        desvio surge quando uma quantidade dobra e o diagrama dobra tanto a altura quanto a largura da figura para não
-        deformá-la. Ao duplicar ambas as dimensões, a <strong>área</strong> aumenta por <strong>quatro vezes</strong>
-        (2 × 2 = 4); em figuras tridimensionais, o volume aparente multiplica-se por oito (2 × 2 × 2). Como o olho
-        compara áreas, o dobro real aparenta ter quadruplicado.
+        Muitos infográficos trocam barras por desenhos (pessoas, moedas, casinhas). O problema aparece quando um valor
+        dobra e quem fez o desenho dobra tanto a altura quanto a largura da figura para ela não ficar esticada. Só que
+        quando você dobra os dois lados, a <strong>área</strong> aumenta <strong>quatro vezes</strong> (2 × 2 = 4); e se
+        for um desenho em 3D, o volume parece multiplicar por oito (2 × 2 × 2). Como nosso olho compara área, o que só
+        dobrou parece que quadruplicou.
       </p>
 
       <!-- =================== FERRAMENTA MÃO NA MASSA 6 =================== -->
@@ -1363,8 +1346,8 @@
           <p class="ferramenta__selo">Mão na massa nº 6</p>
           <h3 id="ferr-pict-titulo">O desenho que cresce para os dois lados</h3>
           <p id="pict-ajuda">
-            Escolha quantas vezes o valor real aumentou e compare a ampliação apenas na altura (proporcional ao dado)
-            com a ampliação simultânea em altura e largura.
+            Escolha quantas vezes o valor real aumentou e compare o crescimento só na altura (que fica fiel ao dado) com
+            o crescimento em altura e largura ao mesmo tempo.
           </p>
         </header>
 
@@ -1396,59 +1379,58 @@
         <noscript><p class="aviso-noscript">Esta simulação requer JavaScript. Quando altura e largura dobram juntas, a área da figura quadruplica.</p></noscript>
       </section>
 
-      <h3>Truque 3: recorte conveniente da janela temporal</h3>
+      <h3>Truque 3: recorte conveniente da janela de tempo</h3>
 
       <p>
-        Todo gráfico de linha depende de um ponto inicial e de um ponto final escolhidos por quem o produz. Em um
-        exemplo didático, suponha que na cidade fictícia de Vila Exemplo, no Sul do Brasil, a temperatura média mensal
-        suba de 19 °C em julho para 27 °C em dezembro. Exibindo apenas esses seis meses, seria simples sustentar uma
-        manchete sobre aquecimento acelerado; mostrando os doze meses completos, porém, revela-se apenas o ciclo
-        sazonal regular entre inverno e verão. Esse procedimento recebe o nome de seleção enviesada (em inglês,
-        <em>cherry-picking</em>).
+        Todo gráfico de linha depende de onde ele começa e onde ele termina, e quem faz o gráfico escolhe esses dois
+        pontos. Num exemplo simples, imagine que na cidade fictícia de Vila Exemplo, no Sul do Brasil, a temperatura
+        média do mês suba de 19 °C em julho para 27 °C em dezembro. Mostrando só esses seis meses, dá fácil para fazer
+        uma manchete falando de calor disparado; mas se mostrar os doze meses do ano todo, aparece que é só o ciclo
+        normal entre inverno e verão. Esse truque de escolher só o pedaço que interessa tem até nome em inglês:
+        <em>cherry-picking</em> (ou seleção enviesada).
       </p>
 
       <h3>Truque 4: dois eixos paralelos e falsa causalidade</h3>
 
       <p>
-        Gráficos com duas curvas e duas escalas verticais distintas permitem ajustar os intervalos livremente até que
-        dois fenômenos independentes pareçam mover-se em sincronia. Essa coincidência visual alimenta a ilusão de
-        causalidade. O exemplo clássico contrapõe vendas de sorvete e registros de afogamento: ambos aumentam no verão,
-        não porque um provoque o outro, mas porque ambos decorrem de um terceiro fator comum, o calor. Na estatística,
-        a regra é categórica: <strong>correlação não implica causalidade</strong>.
+        Gráficos com duas linhas e duas escalas verticais diferentes deixam você esticar e encolher os números até duas
+        coisas que não têm nada a ver parecerem andar juntas. Essa coincidência no desenho passa a impressão de que uma
+        coisa causa a outra. O exemplo mais famoso junta vendas de sorvete e casos de afogamento: os dois sobem no
+        verão, não porque tomar sorvete cause afogamento, mas porque ambos acontecem por causa de um terceiro fator em
+        comum, que é o calor. Na estatística isso é regra básica: <strong>correlação não quer dizer causalidade</strong>.
       </p>
 
       <h3>Truque 5: porcentagens sem base e totais sem proporção</h3>
 
       <p>
-        Manchetes anunciando que determinado risco “dobrou” provocam impacto imediato, mas exigem uma pergunta prévia:
-        dobrou a partir de qual patamar? Passar de 1 caso em 10.000 para 2 em 10.000 equivale de fato a um aumento
-        relativo de 100%, mantendo-se, porém, um risco absoluto muito baixo.
+        Manchetes dizendo que tal problema “dobrou” chamam atenção na hora, mas pedem uma pergunta antes: dobrou a
+        partir de quanto? Passar de 1 caso em 10.000 para 2 em 10.000 é realmente um aumento de 100%, só que o risco
+        continua super baixo.
       </p>
 
       <p>
-        O mesmo equívoco ocorre ao confrontar totais absolutos entre populações de portes distintos. Em uma simulação
-        simples, suponha que a Cidade A possua 100 médicos e a Cidade B disponha de 20. À primeira vista, A parece
-        mais bem atendida; sabendo-se, porém, que A abriga 200.000 habitantes (1 médico para cada 2.000 moradores) e B
-        conta com 10.000 habitantes (1 médico para cada 500 moradores), constata-se que B oferece cobertura proporcional
-        quatro vezes maior. Daí a importância do cálculo <strong>per capita</strong>.
+        O mesmo erro acontece quando comparam totais brutos entre cidades de tamanhos diferentes. Pense num exemplo: a
+        Cidade A tem 100 médicos e a Cidade B tem 20. Olhando por cima, a Cidade A parece bem melhor atendida. Mas quando
+        a gente vê que A tem 200.000 moradores (1 médico para cada 2.000 pessoas) e B tem 10.000 moradores (1 médico
+        para cada 500 pessoas), dá para ver que a Cidade B tem cobertura quatro vezes maior. Por isso que o cálculo
+        <strong>per capita</strong> faz tanta diferença.
       </p>
 
-      <h3>Truque 6: mapas e projeções que deformam proporções</h3>
+      <h3>Truque 6: mapas e projeções que distorcem proporções</h3>
 
       <p>
-        Mapas coloridos por estado ou município carregam uma armadilha semelhante à dos pictogramas: nossos olhos
-        associam extensão territorial à magnitude do fenômeno. O Amazonas ocupa mais de 1,5 milhão de km², mas reúne
-        menos de 4 milhões de habitantes; em um mapa colorido por percentuais estaduais, sua área tende a dominar a
-        atenção em comparação a estados menores e densamente povoados. Para evitar essa distorção, a cartografia
-        recorre a mapas de pontos, taxas proporcionais ou <em>cartogramas</em>, nos quais cada unidade é redimensionada
-        conforme sua população.
+        Mapas pintados por estado ou município têm uma armadilha parecida com a dos desenhos: nosso olho associa o
+        tamanho do território à força do dado. O Amazonas tem mais de 1,5 milhão de km², mas menos de 4 milhões de
+        habitantes; num mapa pintado por percentuais estaduais, aquela mancha enorme puxa toda a atenção na frente de
+        estados pequenos e cheios de gente. Para não cair nisso, a cartografia usa mapas de pontos, taxas proporcionais
+        ou <em>cartogramas</em>, onde cada região muda de tamanho de acordo com a população.
       </p>
 
       <p>
-        Até mesmo o mapa-múndi tradicional envolve escolhas geométricas. Na projeção de Mercator — valiosa para a
-        navegação por preservar ângulos —, as regiões próximas aos polos ficam ampliadas: a Groenlândia parece rivalizar
-        em tamanho com a África, embora o continente africano seja cerca de 14 vezes maior em área real. Toda
-        projeção plana de uma esfera escolhe o que preservar e o que distorcer.
+        Até o mapa-múndi tradicional envolve escolhas de geometria. Na projeção de Mercator (muito boa para navegação
+        porque mantém os ângulos certos), as áreas perto dos polos ficam esticadas: a Groenlândia parece quase do mesmo
+        tamanho da África, sendo que o continente africano é cerca de 14 vezes maior na área real. Toda tentativa de
+        achatar uma esfera num papel escolhe o que vai preservar e o que vai distorcer.
       </p>
 
       <aside class="box box--dica">
@@ -1456,19 +1438,19 @@
         <h4>Seis sinais de alerta diante de um gráfico</h4>
         <ol>
           <li>O eixo vertical <strong>não começa no zero</strong> em gráficos de barras.</li>
-          <li>Figuras ilustrativas <strong>crescem simultaneamente em altura e largura</strong>.</li>
-          <li>O recorte temporal exibido parece <strong>escolhido de modo conveniente</strong>.</li>
-          <li>Há <strong>dois eixos verticais</strong> com escalas independentes na mesma imagem.</li>
-          <li>Variações percentuais expressivas omitem os <strong>números absolutos de partida</strong>.</li>
-          <li>Faltam <strong>fonte institucional, ano de referência ou unidade de medida</strong>.</li>
+          <li>Figuras ilustrativas <strong>crescem na altura e na largura juntas</strong>.</li>
+          <li>O período de tempo mostrado parece <strong>recortado de um jeito conveniente</strong>.</li>
+          <li>Existem <strong>dois eixos verticais</strong> com escalas diferentes na mesma imagem.</li>
+          <li>Porcentagens gigantes escondem os <strong>números reais de partida</strong>.</li>
+          <li>Faltam <strong>fonte, ano de referência ou unidade de medida</strong>.</li>
         </ol>
       </aside>
 
       <aside class="box box--resumo" aria-labelledby="resumo4-titulo">
         <p class="box__selo">Para guardar</p>
         <h4 id="resumo4-titulo">Em uma frase</h4>
-        <p>Um gráfico confiável apresenta eixo iniciado no zero em barras, proporcionalidade de área, janela temporal íntegra e identificação explícita de fonte, ano e unidade.</p>
-        <p class="desafio"><strong>Exercício sugerido:</strong> selecione um gráfico de barras publicado recentemente na imprensa e verifique onde começa o eixo vertical e se a fonte primária está indicada.</p>
+        <p>Um gráfico confiável começa no zero nas barras, respeita a proporção da área, mostra a janela de tempo inteira e informa fonte, ano e unidade.</p>
+        <p class="desafio"><strong>Exercício sugerido:</strong> pegue um gráfico de barras recente de qualquer notícia e confira onde começa o eixo vertical e se tem fonte indicada.</p>
       </aside>
     </article>
 
@@ -1479,8 +1461,8 @@
       <p class="genero-etiqueta">Resenha · Livro · <span class="tempo-leitura">leitura de cerca de 3 min</span></p>
       <h2 id="resenha-titulo">O pequeno clássico que ensinou a desconfiar de gráficos</h2>
       <p class="linha-fina">
-        Publicado há mais de sete décadas, o livro de Darrell Huff continua sendo uma das introduções mais eficazes ao
-        pensamento crítico diante de médias, amostras e visualizações estatísticas.
+        Lançado há mais de setenta anos, o livro de Darrell Huff continua sendo uma das melhores portas de entrada para
+        aprender a pensar de forma crítica na frente de médias, amostras e gráficos.
       </p>
 
       <dl class="ficha-obra">
@@ -1491,41 +1473,41 @@
       </dl>
 
       <p>
-        Darrell Huff não atuava como estatístico acadêmico, mas como jornalista dedicado a traduzir temas técnicos para
-        o público geral. Essa origem explica a fluidez do livro: sem recorrer a demonstrações algébricas, ele combina
-        narrativas breves e ilustrações memoráveis de Irving Geis para expor como dados autênticos podem sustentar
-        conclusões distorcidas.
+        Darrell Huff não era estatístico de universidade, e sim jornalista acostumado a traduzir assuntos técnicos para o
+        público comum. Isso explica por que o livro desce tão fácil: sem encher de álgebra e demonstração pesada, ele
+        junta histórias curtas e os desenhos marcantes de Irving Geis para mostrar como números verdadeiros podem
+        empurrar para conclusões distorcidas.
       </p>
 
       <p>
-        Dividida em dez capítulos curtos, a obra cataloga armadilhas recorrentes: amostras viciadas por autoseleção,
-        confusão deliberada entre média, mediana e moda, números apresentados sem referência de tamanho amostral,
-        gráficos com eixos truncados, pictogramas desproporcionais e correlações vendidas como causalidade — vários
-        dos mecanismos examinados ao longo desta revista.
+        Dividido em dez capítulos curtinhos, o livro faz um catálogo de armadilhas bem conhecidas: amostras viciadas onde
+        só responde quem quer, troca proposital entre média, mediana e moda, números soltos sem falar o tamanho da
+        amostra, gráficos com eixos cortados, desenhos fora de escala e correlações vendidas como se fossem causa e
+        efeito (várias coisas que a gente mostrou aqui na revista).
       </p>
 
       <p>
-        O capítulo conclusivo inverte a abordagem ao propor cinco perguntas de autodefesa intelectual diante de
-        qualquer dado divulgado: quem afirma isso? Como obteve a informação? O que ficou de fora? Houve mudança de
-        critério no meio do argumento? A conclusão faz sentido? Essa matriz orientou diretamente o nosso guia prático.
+        O último capítulo vira a chave e dá cinco perguntas simples para não engolir qualquer dado que aparece na frente:
+        quem está falando isso? Como conseguiu essa informação? O que ficou de fora? Mudaram o critério no meio do
+        caminho? E a conclusão faz sentido? Foi daí que tiramos a base para montar o nosso guia prático logo a seguir.
       </p>
 
       <h3>Alcance e limites da obra</h3>
 
       <ul class="lista-simples">
-        <li><strong>Pontos fortes:</strong> escrita clara, excelente integração entre texto e ilustração e ritmo ágil, tornando-o excelente porta de entrada para a leitura crítica de dados.</li>
-        <li><strong>Limites:</strong> muitos exemplos pertencem ao contexto publicitário e midiático norte-americano dos anos 1950; além disso, uma leitura apressada pode gerar ceticismo exagerado contra toda pesquisa quantitativa.</li>
-        <li><strong>Cuidado de leitura:</strong> a lição do livro não é rejeitar a estatística, mas aprender a interrogá-la com critério científico.</li>
+        <li><strong>Pontos fortes:</strong> leitura leve, desenhos que ajudam de verdade a entender o texto e ritmo rápido, ótimo para quem está começando a olhar dados com olhar mais crítico.</li>
+        <li><strong>Limites:</strong> muitos exemplos vêm de propagandas e jornais dos Estados Unidos nos anos 1950; além disso, quem lê rápido demais pode acabar achando que nenhuma pesquisa presta, o que também é exagero.</li>
+        <li><strong>Cuidado de leitura:</strong> a ideia do livro não é jogar a estatística fora, e sim aprender a fazer as perguntas certas para ela.</li>
       </ul>
 
       <p>
-        <strong>Para quem?</strong> Para estudantes de graduação e ensino médio, jornalistas, educadores e leitores
-        cotidianos de notícias. Quem desejar aprofundar os fundamentos do design informacional encontrará continuidade
-        rigorosa em <em>The Visual Display of Quantitative Information</em>, de Edward Tufte, obra que formaliza o
-        “fator de mentira” discutido anteriormente.
+        <strong>Para quem?</strong> Para estudantes de graduação e ensino médio, jornalistas, professores e qualquer pessoa
+        que lê notícias todo dia. Quem quiser ir mais fundo na parte visual dos gráficos encontra uma continuação mais
+        técnica em <em>The Visual Display of Quantitative Information</em>, de Edward Tufte, livro onde aparece formalizado
+        o “fator de mentira” que vimos antes.
       </p>
 
-      <p class="assinatura">Resenha: <span class="preencher">[PREENCHER: autores]</span> <strong>temos que decidir isso</strong> </p>
+      <p class="assinatura">Resenha: <span class="preencher">rever quem vai assinar aqui</span></p>
     </article>
 
     <!-- =====================================================================
@@ -1535,22 +1517,22 @@
       <p class="genero-etiqueta">Guia prático · Serviço</p>
       <h2 id="guia-titulo">Sete perguntas antes de compartilhar um número</h2>
       <p class="linha-fina">
-        Dados descontextualizados circulam com rapidez pela aparência de objetividade científica. Esta lista reúne sete
-        verificações rápidas para aplicar em menos de um minuto antes de repassar qualquer estatística.
+        Números fora de contexto correm rápido nas redes porque passam ar de coisa científica. Esta lista junta sete
+        checagens rápidas que dá para fazer em menos de um minuto antes de repassar qualquer estatística.
       </p>
 
       <h3>Quadro de síntese: cinco ferramentas, cinco perguntas</h3>
       <table class="tabela-dados tabela-cola">
-        <caption>O que cada indicador responde e qual precaução exige</caption>
+        <caption>O que cada indicador responde e qual cuidado ele pede</caption>
         <thead>
           <tr><th scope="col">Ferramenta</th><th scope="col">Pergunta que responde</th><th scope="col">Cuidado necessário</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Pirâmide etária</th><td>Como a população distribui-se por idade e sexo?</td><td>Distinguir contagem censitária de projeção futura.</td></tr>
-          <tr><th scope="row">Média</th><td>Quanto caberia a cada integrante em uma partilha igual?</td><td>Valores extremos puxam o resultado para cima ou para baixo.</td></tr>
-          <tr><th scope="row">Mediana</th><td>Qual valor ocupa o centro da fila ordenada?</td><td>Não reflete a distância existente nas extremidades da fila.</td></tr>
-          <tr><th scope="row">Índice de Gini</th><td>Quão desigual é a repartição da renda?</td><td>Não informa o volume total da renda nem onde a desigualdade concentra-se.</td></tr>
-          <tr><th scope="row">IDH</th><td>A sociedade combina longevidade, educação e renda?</td><td>Por ser uma média nacional, oculta contrastes internos entre municípios.</td></tr>
+          <tr><th scope="row">Pirâmide etária</th><td>Como a população se divide por idade e sexo?</td><td>Separar o que é contagem de censo do que é projeção futura.</td></tr>
+          <tr><th scope="row">Média</th><td>Quanto daria para cada pessoa numa divisão igual?</td><td>Valores muito altos ou muito baixos puxam o resultado.</td></tr>
+          <tr><th scope="row">Mediana</th><td>Qual valor fica no meio da fila ordenada?</td><td>Não mostra o tamanho da distância nas pontas da fila.</td></tr>
+          <tr><th scope="row">Índice de Gini</th><td>Quão desigual é a divisão da renda?</td><td>Não diz o total de riqueza nem onde a desigualdade se concentra.</td></tr>
+          <tr><th scope="row">IDH</th><td>O lugar combina saúde, educação e renda?</td><td>Por ser média do país inteiro, esconde diferenças entre cidades.</td></tr>
         </tbody>
       </table>
 
@@ -1560,50 +1542,50 @@
         <li>
           <label>
             <input type="checkbox" id="check-1">
-            <span><strong>1. Quem produziu o dado?</strong> Verifique a fonte: IBGE, universidade ou organismo oficial. Capturas de tela sem indicação de origem não oferecem confiabilidade.</span>
+            <span><strong>1. Quem produziu o dado?</strong> Confira a fonte: IBGE, universidade ou órgão oficial. Print solto sem dizer de onde veio não dá confiança nenhuma.</span>
           </label>
         </li>
         <li>
           <label>
             <input type="checkbox" id="check-2">
-            <span><strong>2. Qual é o ano de referência?</strong> Séries estatísticas envelhecem. Um dado de 2010 não retrata o Brasil atual, e manchetes antigas circulam frequentemente fora de contexto.</span>
+            <span><strong>2. Qual é o ano de referência?</strong> Dados envelhecem. Um número de 2010 não retrata o Brasil de hoje, e muita notícia antiga volta a circular como se fosse nova.</span>
           </label>
         </li>
         <li>
           <label>
             <input type="checkbox" id="check-3">
-            <span><strong>3. A escala vertical começa no zero?</strong> Em gráficos de barras, confira os valores do eixo antes de aceitar a diferença visual entre colunas.</span>
+            <span><strong>3. A escala vertical começa no zero?</strong> Em gráficos de barras, olhe os números do eixo antes de acreditar no tamanho da diferença entre as colunas.</span>
           </label>
         </li>
         <li>
           <label>
             <input type="checkbox" id="check-4">
-            <span><strong>4. Trata-se de média ou mediana?</strong> Em dados de renda, salários ou preços, pergunte se valores extremos estão deslocando a média para cima.</span>
+            <span><strong>4. É média ou mediana?</strong> Quando o assunto for renda, salário ou preço, desconfie se poucos valores altos não estão puxando a média para cima.</span>
           </label>
         </li>
         <li>
           <label>
             <input type="checkbox" id="check-5">
-            <span><strong>5. Percentual de quê? Total ou per capita?</strong> Um aumento de 100% sobre um número ínfimo continua pequeno, e comparar totais absolutos entre populações desiguais induz ao erro.</span>
+            <span><strong>5. Porcentagem de quê? Total ou per capita?</strong> Um salto de 100% em cima de um número minúsculo continua pequeno, e comparar totais brutos entre cidades de tamanhos diferentes engana fácil.</span>
           </label>
         </li>
         <li>
           <label>
             <input type="checkbox" id="check-6">
-            <span><strong>6. Os termos comparados seguem o mesmo critério?</strong> Confira período, unidade e correção pela inflação — razão pela qual o IBGE distingue rendimento nominal de rendimento real.</span>
+            <span><strong>6. Estão comparando usando o mesmo critério?</strong> Veja período, unidade e se descontaram a inflação (por isso o IBGE separa rendimento nominal de rendimento real).</span>
           </label>
         </li>
         <li>
           <label>
             <input type="checkbox" id="check-7">
-            <span><strong>7. A manchete reflete o que os números mostram?</strong> Leia título, eixos e legenda antes de aceitar a conclusão visual; manchetes dramáticas diante de variações discretas merecem desconfiança.</span>
+            <span><strong>7. A manchete combina com o que os números mostram?</strong> Leia título, eixos e legenda antes de aceitar a conclusão; título escandaloso para variação pequena já é sinal de alerta.</span>
           </label>
         </li>
       </ul>
 
       <div class="checklist__resumo" aria-live="polite">
         <progress id="check-progresso" max="7" value="0">0 de 7</progress>
-        <p id="check-texto">Você marcou 0 das 7 perguntas. Utilize esta lista sempre que analisar um dado público.</p>
+        <p id="check-texto">Você marcou 0 das 7 perguntas. Use esta lista sempre que um número chamar atenção.</p>
       </div>
 
       <form id="quiz" class="quiz" aria-labelledby="quiz-titulo" novalidate>
@@ -1618,9 +1600,9 @@
           <details class="resposta-detalhe">
             <summary>Ver a resposta</summary>
             <p>
-              A alternativa correta é a <strong>mediana (R$ 2.000)</strong>. Como a soma atinge R$ 100.000, a média sobe
-              para R$ 10.000, valor distante da realidade de nove em cada dez participantes. Quem ocupa o meio da fila
-              recebe R$ 2.000.
+              A resposta certa é a <strong>mediana (R$ 2.000)</strong>. Como a soma dá R$ 100.000, a média sobe para
+              R$ 10.000, bem longe do que nove em cada dez pessoas ganham ali dentro. Quem está no meio da fila recebe
+              R$ 2.000.
             </p>
           </details>
         </fieldset>
@@ -1634,23 +1616,23 @@
           <details class="resposta-detalhe">
             <summary>Ver a resposta</summary>
             <p>
-              O mais provável é que o <strong>eixo vertical comece próximo a 49</strong>: nesse caso, as alturas visíveis
-              são 3 (52 − 49) e 1 (50 − 49), gerando proporção de 3 para 1 diante de uma diferença real de apenas 4%.
+              O mais provável é que o <strong>eixo vertical comece perto de 49</strong>: aí as alturas desenhadas ficam
+              3 (52 − 49) e 1 (50 − 49), parecendo três vezes maior quando a diferença real é de só 4%.
             </p>
           </details>
         </fieldset>
 
         <fieldset class="quiz-pergunta" data-correta="c">
           <legend>3. Em 1980, 38,2% dos brasileiros tinham até 14 anos. Em 2022, eram 19,8%. Que efeito isso produz na base da pirâmide etária?</legend>
-          <label><input type="radio" name="q3" value="a"> A base torna-se mais larga.</label>
-          <label><input type="radio" name="q3" value="b"> A forma da pirâmide permanece inalterada.</label>
-          <label><input type="radio" name="q3" value="c"> A base estreita-se e a pirâmide passa a lembrar um barril.</label>
-          <label><input type="radio" name="q3" value="d"> O topo torna-se mais estreito.</label>
+          <label><input type="radio" name="q3" value="a"> A base fica mais larga.</label>
+          <label><input type="radio" name="q3" value="b"> A forma da pirâmide continua igual.</label>
+          <label><input type="radio" name="q3" value="c"> A base se estreita e a pirâmide passa a lembrar um barril.</label>
+          <label><input type="radio" name="q3" value="d"> O topo fica mais estreito.</label>
           <details class="resposta-detalhe">
             <summary>Ver a resposta</summary>
             <p>
-              A base representa crianças e adolescentes. Com a redução de 38,2% para 19,8%, a base estreita-se,
-              enquanto o aumento da longevidade alarga o centro e o topo, configurando a forma de barril.
+              A base mostra crianças e adolescentes. Caindo de 38,2% para 19,8%, a base se estreita, enquanto a vida
+              mais longa vai alargando o meio e o topo, formando o formato de barril.
             </p>
           </details>
         </fieldset>
@@ -1667,37 +1649,37 @@
       <p class="genero-etiqueta">Perguntas e respostas</p>
       <h2 id="perguntas-titulo">Perguntas diretas, respostas claras</h2>
       <p class="linha-fina">
-        Dúvidas frequentes sobre o Censo, indicadores sociais e leitura de gráficos, respondidas de forma objetiva e
-        sem jargão excessivo. Selecione cada questão para abrir a resposta.
+        Dúvidas comuns sobre o Censo, indicadores sociais e leitura de gráficos, respondidas direto ao ponto e sem
+        enrolação. Clique em cada pergunta para abrir a resposta.
       </p>
       <div class="perguntas__lista">
         <details class="pergunta-detalhe">
           <summary>O que é o IBGE e por que reúne Geografia e Estatística no mesmo nome?</summary>
-          <p>O Instituto Brasileiro de Geografia e Estatística (IBGE) é a instituição pública federal encarregada das estatísticas oficiais e do mapeamento do território nacional. Estruturado entre 1936 e 1938, integrou em um mesmo órgão quem analisa dados populacionais e econômicos (estatística) e quem descreve e cartografa o espaço brasileiro (geografia) — a mesma parceria interdisciplinar que orienta esta revista.</p>
+          <p>O Instituto Brasileiro de Geografia e Estatística (IBGE) é o órgão público federal que cuida das estatísticas oficiais e do mapeamento do país. Montado entre 1936 e 1938, ele juntou no mesmo lugar quem analisa números da população e da economia (estatística) e quem mapeia o território brasileiro (geografia), que é a mesma mistura que guia esta revista.</p>
         </details>
         <details class="pergunta-detalhe">
           <summary>Por que o Censo visita todos os domicílios em vez de entrevistar apenas uma amostra?</summary>
-          <p>Porque o Censo precisa produzir números confiáveis até para municípios pequenos e bairros específicos, nível de detalhe que uma amostra não garante. Além disso, o tamanho populacional de cada cidade orienta decisões públicas relevantes, como o repasse constitucional de recursos entre prefeituras.</p>
+          <p>Porque o Censo precisa gerar números confiáveis até para cidades bem pequenas e bairros específicos, coisa que uma pesquisa por amostra não consegue garantir com precisão. Além disso, o tamanho da população de cada município define decisões importantes, como quanto dinheiro constitucional vai para cada prefeitura.</p>
         </details>
         <details class="pergunta-detalhe">
           <summary>Se o morador não estiver em casa na visita do recenseador, fica fora da contagem?</summary>
-          <p>Em regra, não: o recenseador realiza retornos em horários alternados e o IBGE costuma disponibilizar canais complementares, como resposta por telefone ou internet, conforme os procedimentos de cada edição.</p>
+          <p>Normalmente não: o recenseador volta em outros horários e o IBGE costuma abrir opções extras, como responder por telefone ou internet, dependendo das regras daquela edição.</p>
         </details>
         <details class="pergunta-detalhe">
           <summary>Que formato a pirâmide etária tende a assumir após a fase de barril?</summary>
-          <p>Mantida a combinação de baixa fecundidade e maior longevidade, a base continua estreitando-se enquanto o topo ganha peso. O IBGE projeta estabilidade e início de recuo populacional por volta de 2041, cenário já verificado em países como o Japão. Projeções, contudo, refletem tendências atuais e podem variar conforme fluxos migratórios e políticas públicas.</p>
+          <p>Se continuar nascendo pouca criança e as pessoas vivendo mais, a base segue afinando enquanto o topo ganha mais peso. O IBGE projeta que a população pare de crescer e comece a diminuir por volta de 2041, algo que já acontece em países como o Japão. Só vale lembrar que projeções mostram tendências e podem mudar conforme migrações e políticas públicas.</p>
         </details>
         <details class="pergunta-detalhe">
           <summary>Um Índice de Gini igual a zero seria o cenário ideal?</summary>
-          <p>Nenhum país real registra Gini igual a zero, pois diferenças de idade, carreira e qualificação produzem dispersão de renda. O índice mensura o grau de desigualdade na distribuição, mas não decide qual patamar é justo ou aceitável — uma escolha que cabe ao debate econômico e social, agora amparado por números confiáveis.</p>
+          <p>Nenhum país real tem Gini igual a zero, porque diferenças de idade, tempo de carreira e formação sempre geram alguma variação de renda. O índice mede o tamanho da desigualdade na divisão, mas não escolhe qual nível é justo ou aceitável, pois essa discussão é econômica e social.</p>
         </details>
         <details class="pergunta-detalhe">
           <summary>Por que a média continua tão utilizada se pode distorcer a leitura?</summary>
-          <p>Pela simplicidade de cálculo e pela precisão em distribuições homogêneas, como notas de uma turma ou estaturas físicas. O problema não reside na média em si, mas em apresentá-la isoladamente em dados muito concentrados — como salários e patrimônio — sem a companhia da mediana.</p>
+          <p>Porque é muito fácil de calcular e funciona super bem em conjuntos parecidos, como notas de uma sala ou alturas de um grupo. O problema não está na média em si, e sim em jogar ela sozinha quando os valores são muito concentrados (como salários e patrimônio) sem mostrar a mediana junto.</p>
         </details>
         <details class="pergunta-detalhe">
           <summary>É possível confiar em gráficos visualmente sofisticados?</summary>
-          <p>Qualidade estética e rigor estatístico são dimensões independentes: um infográfico elaborado pode distorcer a escala, enquanto um gráfico simples pode ser inteiramente fiel. Verifique sempre a origem do eixo, as unidades e a fonte dos dados.</p>
+          <p>Gráfico bonito e dado certo são coisas independentes: um infográfico cheio de efeito pode estar com a escala cortada, enquanto um gráfico simples feito no caderno pode ser totalmente fiel. Sempre confira onde começa o eixo, as unidades e a fonte.</p>
         </details>
       </div>
     </section>
@@ -1708,66 +1690,64 @@
     <article class="entrevista" id="entrevista" aria-labelledby="entrevista-titulo">
       <p class="genero-etiqueta">Entrevista</p>
 
-      <h4><strong>EU ESTAVA VENDO UMA SUGESTAO DE COLOCAR UMA ENTREVISTA SIMPLES EM NOSSA REVISTA, NÃO SEI SE VOCÊS APOIAM TER ESSA PARTE</strong></h4>
+      <h4><strong class="preencher">Rever aqui pessoal: vamos mesmo deixar essa parte da entrevista ou tirar?</strong></h4>
       <hr>
-      <h2 id="entrevista-titulo">Conversa com <span class="preencher">[PREENCHER: nome do entrevistado]</span></h2>
+      <h2 id="entrevista-titulo">Conversa com <span class="preencher">colocar o nome do entrevistado aqui</span></h2>
       <p class="linha-fina preencher">
-        [PREENCHER: uma frase resumindo o eixo da conversa. Exemplo: “Em entrevista à revista, o(a) docente
-        explica por que desconfiar de médias isoladas, como identificar distorções visuais em gráficos e o que
-        aprendeu ao longo da carreira trabalhando com dados.”]
+        Rever aqui: colocar uma frase curta resumindo a entrevista (ex.: o que o professor explicou sobre médias,
+        gráficos e trabalhar com dados).
       </p>
 
       <aside class="box box--perfil">
         <p class="box__selo">Quem é</p>
         <p class="preencher">
-          [PREENCHER: apresentação concisa do entrevistado: nome completo, titulação, instituição, área de atuação
-          e experiência relacionada ao tema.]
+          Rever aqui: escrever quem é a pessoa entrevistada (nome completo, formação, onde trabalha ou dá aula).
         </p>
         <p class="box__nota">
-          Entrevista realizada em <span class="preencher">[PREENCHER: data]</span>,
-          <span class="preencher">[PREENCHER: formato: presencialmente / por videochamada / por escrito]</span>.
+          Entrevista feita em <span class="preencher">colocar a data</span>,
+          <span class="preencher">dizer se foi presencial, por chamada ou por escrito</span>.
         </p>
       </aside>
 
       <div class="entrevista__corpo">
 
         <div class="pergunta-resposta">
-          <p class="pergunta"><strong>Conta de Gente:</strong> Se fosse necessário explicar a um leitor sem formação na área no que consiste o seu trabalho com números e dados, como o definiria?</p>
-          <p class="resposta preencher">[PREENCHER: resposta do entrevistado]</p>
+          <p class="pergunta"><strong>Conta de Gente:</strong> Se fosse explicar para alguém que não é da área como funciona o seu trabalho com números e dados, como você resumiria?</p>
+          <p class="resposta preencher">falta colocar a resposta aqui</p>
         </div>
 
         <div class="pergunta-resposta">
-          <p class="pergunta"><strong>Conta de Gente:</strong> Por que conseguimos confiar em uma pesquisa por amostra bem planejada sem consultar toda a população?</p>
-          <p class="resposta preencher">[PREENCHER: resposta do entrevistado]</p>
+          <p class="pergunta"><strong>Conta de Gente:</strong> Por que dá para confiar numa pesquisa por amostra bem feita sem precisar entrevistar todo mundo?</p>
+          <p class="resposta preencher">falta colocar a resposta aqui</p>
         </div>
 
         <div class="pergunta-resposta">
-          <p class="pergunta"><strong>Conta de Gente:</strong> Qual é o erro mais frequente cometido na leitura de médias ou porcentagens no noticiário?</p>
-          <p class="resposta preencher">[PREENCHER: resposta do entrevistado]</p>
+          <p class="pergunta"><strong>Conta de Gente:</strong> Qual é o erro que mais aparece quando alguém lê médias ou porcentagens nas notícias?</p>
+          <p class="resposta preencher">rever aqui: resposta do entrevistado</p>
         </div>
 
         <blockquote class="citacao preencher">
-          [PREENCHER: selecionem a declaração mais marcante da entrevista para destaque editorial]
+          Rever aqui: escolher a frase mais legal da entrevista para deixar em destaque
         </blockquote>
 
         <div class="pergunta-resposta">
-          <p class="pergunta"><strong>Conta de Gente:</strong> Já observou um gráfico tecnicamente correto nos números, mas enganoso na representação visual? Como percebeu o problema?</p>
-          <p class="resposta preencher">[PREENCHER: resposta do entrevistado]</p>
+          <p class="pergunta"><strong>Conta de Gente:</strong> Você já viu algum gráfico com números certos, mas que passava uma ideia errada no desenho? Como percebeu?</p>
+          <p class="resposta preencher">falta colocar a resposta aqui</p>
         </div>
 
         <div class="pergunta-resposta">
-          <p class="pergunta"><strong>Conta de Gente:</strong> O Brasil atravessa um processo acelerado de envelhecimento demográfico. O que essa mudança transforma na vida das próximas gerações?</p>
-          <p class="resposta preencher">[PREENCHER: resposta do entrevistado]</p>
+          <p class="pergunta"><strong>Conta de Gente:</strong> O Brasil está envelhecendo rápido. O que essa mudança deve mudar na vida das próximas gerações?</p>
+          <p class="resposta preencher">falta colocar a resposta aqui</p>
         </div>
 
         <div class="pergunta-resposta">
-          <p class="pergunta"><strong>Conta de Gente:</strong> De que maneira a Matemática e a Geografia dialogam no seu trabalho cotidiano?</p>
-          <p class="resposta preencher">[PREENCHER: resposta do entrevistado]</p>
+          <p class="pergunta"><strong>Conta de Gente:</strong> Como a Matemática e a Geografia aparecem juntas no seu dia a dia de trabalho?</p>
+          <p class="resposta preencher">rever aqui: resposta do entrevistado</p>
         </div>
 
         <div class="pergunta-resposta">
-          <p class="pergunta"><strong>Conta de Gente:</strong> Que conselho daria a quem deseja aprender a ler estatísticas públicas com mais autonomia?</p>
-          <p class="resposta preencher">[PREENCHER: resposta do entrevistado]</p>
+          <p class="pergunta"><strong>Conta de Gente:</strong> Que dica você daria para quem quer aprender a ler estatísticas públicas sem cair em pegadinha?</p>
+          <p class="resposta preencher">falta colocar a resposta aqui</p>
         </div>
 
       </div>
@@ -1780,94 +1760,94 @@
       <p class="genero-etiqueta">Glossário</p>
       <h2 id="glossario-titulo">Termos técnicos traduzidos</h2>
       <p class="linha-fina">
-        Definições diretas, em ordem alfabética, dos principais conceitos estatísticos, demográficos e geográficos
-        empregados nesta edição.
+        Explicações curtas, em ordem alfabética, dos principais termos de estatística, demografia e geografia que
+        aparecem nesta edição.
       </p>
 
       <dl class="glossario__lista">
         <div>
           <dt>Amostra</dt>
-          <dd>Subconjunto selecionado com critérios estatísticos para representar um grupo maior. Como a colher de sopa provada para avaliar a panela inteira, permite estimar características da população sem entrevistar todos os habitantes.</dd>
+          <dd>Um grupo menor escolhido com critério para representar o todo. Igual provar uma colher da sopa para saber como está a panela inteira, sem entrevistar toda a população.</dd>
         </div>
         <div>
           <dt>Censo (ou recenseamento)</dt>
-          <dd>Contagem exaustiva da população de um país, domicílio por domicílio. No Brasil, é realizado pelo IBGE desde 1940 (o primeiro censo nacional ocorreu no Império, em 1872).</dd>
+          <dd>Contagem completa de quem mora no país, casa por casa. No Brasil, quem faz é o IBGE desde 1940 (sendo que o primeiro censo geral foi ainda no Império, em 1872).</dd>
         </div>
         <div>
           <dt>Correlação</dt>
-          <dd>Associação estatística entre duas variáveis que oscilam conjuntamente. Correlação não comprova relação de causa e efeito.</dd>
+          <dd>Quando duas variáveis sobem ou descem juntas em algum dado. Ter correlação não prova que uma causou a outra.</dd>
         </div>
         <div>
           <dt>Demografia</dt>
-          <dd>Ciência que estuda a dinâmica das populações: volume, estrutura etária, nascimentos, óbitos e deslocamentos espaciais. Deriva do grego <em>demos</em> (povo) e <em>graphein</em> (descrever).</dd>
+          <dd>Área que estuda as populações: quantas pessoas existem, idades, nascimentos, mortes e mudanças de lugar. Vem do grego <em>demos</em> (povo) e <em>graphein</em> (descrever).</dd>
         </div>
         <div>
           <dt>Domicílio</dt>
-          <dd>Local estruturalmente separado e independente destinado à moradia de uma ou mais pessoas — unidade básica visitada pelo recenseador.</dd>
+          <dd>Local separado e independente onde mora uma ou mais pessoas; é a unidade básica que o recenseador visita.</dd>
         </div>
         <div>
           <dt>Eixo</dt>
-          <dd>Linha graduada que orienta a leitura de um gráfico. Em gráficos de barras, o eixo vertical funciona como régua de medida da altura das colunas.</dd>
+          <dd>Linha com números que organiza um gráfico. Em gráficos de barras, o eixo vertical funciona como a régua que marca a altura das colunas.</dd>
         </div>
         <div>
           <dt>Esperança de vida ao nascer</dt>
-          <dd>Número médio de anos que se espera que um recém-nascido viva caso permaneçam constantes as condições de mortalidade vigentes no ano de seu nascimento. Também chamada de expectativa de vida.</dd>
+          <dd>Quantos anos, em média, um bebê recém-nascido viveria se continuassem iguais as condições de saúde e mortalidade do ano em que nasceu. Também chamada de expectativa de vida.</dd>
         </div>
         <div>
           <dt>Fator de mentira</dt>
-          <dd>Medida proposta por Edward Tufte: razão entre a variação exibida pelo desenho e a variação real dos dados. Valores distantes de 1 indicam exagero visual.</dd>
+          <dd>Conta proposta por Edward Tufte: divide o tamanho da mudança mostrada no desenho pela mudança real dos dados. Números longe de 1 mostram exagero visual.</dd>
         </div>
         <div>
           <dt>Índice de Gini</dt>
-          <dd>Indicador de 0 a 1 que mensura o grau de concentração de uma distribuição, geralmente de renda. Zero representa igualdade plena; valores próximos a 1 indicam concentração extrema.</dd>
+          <dd>Número de 0 a 1 que mede o nível de concentração de uma distribuição, geralmente de renda. Zero significa divisão igual; perto de 1 indica concentração extrema.</dd>
         </div>
         <div>
           <dt>IDH e IDHM</dt>
-          <dd>Índice de Desenvolvimento Humano: nota de 0 a 1 que combina saúde, educação e renda pela média geométrica. O “M” de IDHM refere-se à versão aplicada aos municípios brasileiros.</dd>
+          <dd>Índice de Desenvolvimento Humano: nota de 0 a 1 que junta saúde, educação e renda pela média geométrica. O “M” de IDHM indica a versão calculada para os municípios brasileiros.</dd>
         </div>
         <div>
           <dt>Idade mediana</dt>
-          <dd>Idade da pessoa posicionada exatamente no centro quando toda a população é ordenada por idade: metade é mais jovem e metade é mais velha.</dd>
+          <dd>Idade da pessoa que fica bem no meio quando colocamos toda a população em fila por idade: metade é mais nova e metade é mais velha.</dd>
         </div>
         <div>
           <dt>Índice de envelhecimento</dt>
-          <dd>Número de pessoas com 65 anos ou mais para cada 100 crianças e adolescentes de 0 a 14 anos. No Brasil de 2022, atingiu 55,2.</dd>
+          <dd>Quantas pessoas de 65 anos ou mais existem para cada 100 crianças e adolescentes de 0 a 14 anos. No Brasil em 2022, ficou em 55,2.</dd>
         </div>
         <div>
           <dt>Média</dt>
-          <dd>Soma de todos os valores dividida pela quantidade de elementos. Expressa quanto caberia a cada integrante em uma divisão igualitária.</dd>
+          <dd>Soma de todos os valores dividida pela quantidade de itens. Mostra quanto daria para cada um se tudo fosse dividido por igual.</dd>
         </div>
         <div>
           <dt>Mediana</dt>
-          <dd>Valor central de um conjunto ordenado do menor para o maior. Metade das observações encontra-se abaixo dela e metade, acima.</dd>
+          <dd>Valor que fica exatamente no centro de uma lista colocada em ordem do menor para o maior. Metade dos valores fica abaixo dela e metade acima.</dd>
         </div>
         <div>
           <dt>Moda</dt>
-          <dd>Valor que ocorre com maior frequência em um conjunto de dados.</dd>
+          <dd>Valor que aparece mais vezes num conjunto de dados.</dd>
         </div>
         <div>
           <dt>Per capita</dt>
-          <dd>Expressão latina que significa “por cabeça”. Divide-se um total pelo número de habitantes ou moradores para viabilizar comparações proporcionais.</dd>
+          <dd>Expressão em latim que quer dizer “por cabeça”. Divide-se o total pelo número de moradores ou habitantes para poder comparar grupos de tamanhos diferentes.</dd>
         </div>
         <div>
           <dt>Pirâmide etária</dt>
-          <dd>Gráfico de barras horizontais empilhadas que representa a estrutura de idades da população, separando homens de um lado e mulheres de outro.</dd>
+          <dd>Gráfico de barras deitadas empilhadas que mostra as faixas de idade da população, dividindo homens de um lado e mulheres do outro.</dd>
         </div>
         <div>
           <dt>Projeção</dt>
-          <dd>Estimativa futura da população calculada a partir de hipóteses sobre tendências de fecundidade, mortalidade e migração.</dd>
+          <dd>Estimativa de como a população deve estar no futuro, feita com base em tendências de nascimentos, mortes e migração.</dd>
         </div>
         <div>
           <dt>Rendimento domiciliar per capita</dt>
-          <dd>Soma dos rendimentos mensais de todos os moradores de um domicílio dividida pelo total de residentes da casa, inclusive crianças.</dd>
+          <dd>Soma de tudo que os moradores de uma casa ganham no mês dividida pelo total de pessoas que moram nela, contando inclusive as crianças.</dd>
         </div>
         <div>
           <dt>Taxa de fecundidade total</dt>
-          <dd>Número médio de filhos que uma mulher teria ao longo da vida reprodutiva caso seguisse as taxas vigentes em determinado ano. Perto de 2,1 mantém o tamanho populacional sem saldo migratório.</dd>
+          <dd>Número médio de filhos que uma mulher teria na vida caso seguisse as taxas daquele ano. Perto de 2,1 mantém a população estável sem contar migrações.</dd>
         </div>
         <div>
           <dt>Valor atípico (<em>outlier</em>)</dt>
-          <dd>Valor muito distante do restante do conjunto, capaz de deslocar fortemente a média sem alterar de forma expressiva a mediana.</dd>
+          <dd>Valor muito fora do padrão do resto do grupo, capaz de puxar bastante a média sem mexer quase nada na mediana.</dd>
         </div>
       </dl>
     </section>
@@ -1881,29 +1861,29 @@
 
       <div class="autores__cartoes">
         <article class="autor">
-          <h3 class="preencher">Miguel e Juan</h3>
+          <h3 class="preencher">Miguel e Juan (rever se coloca o sobrenome)</h3>
           <p class="autor__curso">Licenciatura em Matemática · 2º período</p>
-          <p class="preencher">[PREENCHER: breve apresentação acadêmica e interesses de pesquisa ou ensino em duas ou três linhas.]</p>
+          <p class="preencher">Rever aqui: escrever 2 ou 3 linhas sobre a gente e o que mais interessa no curso.</p>
         </article>
 
         <article class="autor">
-          <h3 class="preencher">Livia</h3>
+          <h3 class="preencher">Lívia (rever se coloca o sobrenome)</h3>
           <p class="autor__curso">Geografia</p>
-          <p class="preencher">[PREENCHER: breve apresentação acadêmica e interesses de pesquisa ou ensino em duas ou três linhas.]</p>
+          <p class="preencher">Rever aqui: escrever 2 ou 3 linhas sobre você e a área de Geografia.</p>
         </article>
       </div>
 
       <p class="preencher">
-        [PREENCHER: parágrafo contando como o trio organizou o trabalho conjunto na redação das matérias, na checagem
-        dos indicadores e na construção dos simuladores interativos.]
+        Rever aqui: escrever um parágrafo contando como o trio dividiu a redação dos textos, a checagem dos dados e a
+        parte dos simuladores.
       </p>
 
       <dl class="expediente">
-        <div><dt>Instituição</dt><dd class="preencher">IFRN</dd></div>
+        <div><dt>Instituição</dt><dd>IFRN (Campus Natal-Central)</dd></div>
         <div><dt>Disciplina</dt><dd>Produção de Texto</dd></div>
-        <div><dt>Professor(a)</dt><dd class="preencher">[PREENCHER: nome do(a) professor(a)]</dd></div>
+        <div><dt>Professor(a)</dt><dd class="preencher">rever aqui: colocar Carlos Alberto de Negreiro</dd></div>
         <div><dt>Edição</dt><dd>Nº 1 · Novembro de 2026</dd></div>
-        <div><dt>Contato</dt><dd class="preencher">[PREENCHER: e-mail ou contato institucional</dd></div>
+        <div><dt>Contato</dt><dd class="preencher">colocar o e-mail do grupo aqui</dd></div>
       </dl>
     </section>
 
@@ -1918,11 +1898,10 @@
         <p class="box__selo">Nota sobre os dados</p>
         <h3>O que é real e o que é simulação didática</h3>
         <p>
-          São <strong>exemplos fictícios</strong>, construídos com finalidade explicativa: a festa das 90 balas, a sala
-          dos dez trabalhadores com o convidado de R$ 1.000.000, a crônica de Marta e Seu Alcides, Vila Exemplo, as
-          Cidades A e B e o cenário do exercício final. Todo o restante (Censo de 1872, Censo 2022, nascimentos,
-          fecundidade, esperança de vida, renda, Gini, IDH e IDHM) provém das fontes oficiais e reportagens listadas
-          abaixo.
+          São <strong>exemplos fictícios</strong>, criados só para ajudar a explicar: a festa das 90 balas, a sala dos
+          dez trabalhadores com o convidado de R$ 1.000.000, a crônica de Marta e Seu Alcides, Vila Exemplo, as Cidades A
+          e B e a situação do exercício final. Todo o resto (Censo de 1872, Censo 2022, nascimentos, fecundidade,
+          esperança de vida, renda, Gini, IDH e IDHM) veio das fontes oficiais e notícias listadas aqui embaixo.
         </p>
       </aside>
 
@@ -2060,61 +2039,14 @@
           <a href="https://hdr.undp.org/content/human-development-report-2025">https://hdr.undp.org/content/human-development-report-2025</a>. Acesso em: 20 nov. 2026.
         </li>
       </ul>
-    </section>
 
-<!-- =====================================================================
-         BLOCO 12B — CARTAS À REDAÇÃO (AVALIAÇÃO E SUGESTÕES)
-         ===================================================================== -->
-    <section class="cartas sem-impressao" id="cartas" aria-labelledby="cartas-titulo">
-      <p class="genero-etiqueta">Cartas à redação</p>
-      <h2 id="cartas-titulo">Avalie esta edição</h2>
-      <p class="linha-fina">
-        O que achou das reportagens e dos simuladores? Dê uma nota de 1 a 5 estrelas e, se quiser, deixe uma sugestão
-        de tema para a próxima edição.
-      </p>
-
-      <form id="form-cartas" class="cartas__form" novalidate>
-        <div class="cartas__nota-bloco">
-          <p id="cartas-rotulo-nota" class="cartas__label">Sua avaliação geral</p>
-          <div id="cartas-estrelas" class="estrelas" role="group" aria-labelledby="cartas-rotulo-nota">
-            <button type="button" class="estrela" data-nota="1" aria-pressed="false" aria-label="1 estrela">★</button>
-            <button type="button" class="estrela" data-nota="2" aria-pressed="false" aria-label="2 estrelas">★</button>
-            <button type="button" class="estrela" data-nota="3" aria-pressed="false" aria-label="3 estrelas">★</button>
-            <button type="button" class="estrela" data-nota="4" aria-pressed="false" aria-label="4 estrelas">★</button>
-            <button type="button" class="estrela" data-nota="5" aria-pressed="false" aria-label="5 estrelas">★</button>
-          </div>
-          <p id="cartas-nota-texto" class="cartas__nota-texto" aria-live="polite">Clique em uma estrela para dar sua nota.</p>
-        </div>
-
-        <div class="cartas__campo">
-          <label for="cartas-nome">Seu nome (opcional)</label>
-          <input type="text" id="cartas-nome" maxlength="60" placeholder="Ex.: Maria Silva">
-        </div>
-
-        <div class="cartas__campo">
-          <label for="cartas-texto">Sugestão ou comentário (opcional)</label>
-          <textarea id="cartas-texto" rows="4" maxlength="500"
-                    placeholder="Escreva o que mais gostou, o que pode melhorar ou um assunto para a edição nº 2..."></textarea>
-        </div>
-
-        <div class="cartas__acoes">
-          <button type="submit" id="cartas-enviar">Enviar avaliação</button>
-        </div>
-        <p id="cartas-aviso" class="cartas__aviso" aria-live="polite"></p>
-      </form>
-
-      <div id="cartas-mural" class="cartas__mural" hidden>
-        <div class="cartas__mural-topo">
-          <h3>Registros desta leitura</h3>
-          <button type="button" id="cartas-limpar" class="cartas__limpar">Limpar</button>
-        </div>
-        <ul id="cartas-lista" class="cartas__lista"></ul>
-      </div>
-
-<p class="box__nota">
-        Sua avaliação e sugestão são enviadas diretamente para a equipe editorial e ficam registradas neste navegador apenas para sua conferência.
+      <p class="box__nota preencher">
+        Lembrete para a gente apagar antes de entregar: testar todos os links no navegador antes do envio final,
+        atualizar a data de acesso se precisar e ver com o professor se ele prefere as URLs inteiras nas notícias.
       </p>
     </section>
+
+    <!-- COLE AQUI A SUA SEÇÃO #cartas ("Opinião do leitor" / Web3Forms) DO SEU ARQUIVO ATUAL -->
 
   </main>
 
@@ -2125,12 +2057,10 @@
     <p class="rodape__marca">Conta de Gente</p>
     <p>
       Revista digital de divulgação científica · Edição nº 1 · Novembro de 2026<br>
-      Trabalho final da disciplina de Produção de Texto ·
-      <span class="preencher">IFRN</span>
+      Trabalho final da disciplina de Produção de Texto · IFRN
     </p>
     <p>
-      Por <span class="preencher">Miguel, Juan</span> e
-      <span class="preencher">Livia</span>.
+      Por Miguel, Juan e Lívia.
     </p>
     <p class="rodape__nota">
       Publicação de fins educativos. Os números oficiais foram conferidos nas fontes indicadas em 20 de novembro de
@@ -2144,4 +2074,4 @@
   </footer>
 
 </body>
-</html>
+                   </html>
